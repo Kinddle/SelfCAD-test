@@ -41,25 +41,24 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
+              <ul class="nav navbar-nav hidden-xs desktop-navbar">
                 <li class="dropdown">
                   <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="home-icon"></span>Home</a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">All Topics</a></li>
-                    <li><a href="#">All Users</a></li>
+                    <li><a href="all-topics.html"><span class="all-topics-icon"></span>All Topics</a></li>
+                    <li><a href="#"><span class="all-users-icon"></span>All Users</a></li>
                   </ul>
                 </li>
                 <li class="selfcad">
-                  <p class="navbar-text" href="#"><span class="logo-icon"></span>My SelfCAD</p>
+                  <a href="#" class="dropdown-toggle"><span class="logo-icon"></span>My SelfCAD</a>
                 </li>
-                
                 <!-- FOR NOT REGISTERED USERS -->
-                
-                <li class="selfcad">
+                <li>
                   <a href="login.html" class="dropdown-toggle"><span class="login-icon"></span>Login</a>
                 </li>
-
                 <!-- FOR NOT REGISTERED USERS -->
+                
+                <!-- FOR REGISTERED USERS -->
 
                 <!-- <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -72,8 +71,41 @@
                 </li> -->
 
                 <!-- END FOR REGISTERED USERS -->
-
               </ul>
+
+              <!-- MOBILE NAVBAR -->
+
+              <ul class="nav navbar-nav mobile-navbar hidden-lg hidden-md hidden-sm">
+                <li>
+                  <a href="index.html"><span class="home-icon"></span>Home</a>
+                </li>
+                <li>
+                  <a href="all-topics.html"><span class="all-topics-icon"></span>All Topics</a>
+                </li>
+                <li>
+                  <a href="all-users.html"><span class="all-users-icon"></span>All Users</a>
+                </li>
+                <li class="selfcad">
+                  <a href="#"><span class="logo-icon"></span>My SelfCAD</a>
+                </li>
+                <li>
+                  <a href="login.html"><span class="login-icon"></span>Login</a>
+                </li>
+                <!-- FOR REGISTERED USERS -->
+
+                <!-- <li>
+                  <a href="#">
+                    <span class="user-photo"></span>Natalia
+                  </a>
+                </li>
+                <li><a href="#"><span class="profile-icon"></span>My Profile</a></li>
+                <li><a href="#"><span class="logout-icon"></span>LogOut</a></li> -->
+
+                <!-- END FOR REGISTERED USERS -->
+              </ul>
+
+              <!-- MOBILE NAVBAR -->
+
             </div><!-- /.navbar-collapse -->
           </div>
         </div><!-- /.container-fluid -->
