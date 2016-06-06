@@ -208,57 +208,46 @@
                     </div>
                   </form>
 
-                  <!-- <form>
-                    <p>Sort by</p>
-                    <div id="sort-by">
-                      <select rv-value="truck.topic_id" class="btn-default"><span class="caret"></span>
-                          <option rv-each-topic="topic" rv-value="topic.id">{ topic.topic_number }</option>
-                      </select>
-                    </div>
-                    <p>Tags</p>
-                    <
-                    <a class="btn btn-default add-topic pull-right" href="#" role="button">New topic</a>
-                  </form> -->
                 </div><!-- Sort-by -->
 
                 <div class="table-responsive">
                   <table class="table">
                     <thead>
                       <tr>
-                        <th>Topic</th>
-                        <th>Category</th> 
-                        <th>Posts</th> 
-                        <th>Views</th> 
-                        <th>Last post by</th>  
+                        <th colspan="2" class="topic-width">Topic</th>
+                        <th class="category-width">Category</th> 
+                        <th class="post-width">Posts</th> 
+                        <th class="views-width">Views</th> 
+                        <th class="post-width">Last post by</th>  
                       </tr> 
                     </thead>
                     <tbody> 
                       <tr class="spacer"></tr>
-                      <tr> 
-                        <th scope="row">
-                          <div class="soft-left-0 rating-star">
-                            <img id="star-1" src="images/not-choosed-star.png" data-swap="images/choosed-star.png" data-src="images/not-choosed-star.png">
-                          </div>
+                      <tr>
+                        <td class="first-col rating-star">
+                          <img id="star-1" src="images/not-choosed-star.png" data-swap="images/choosed-star.png" data-src="images/not-choosed-star.png">
+                        </td> 
+                        <td>
                           <div class="topic-wrap">
                             <p class="title push-bottom-reset">
                               <span><em>Hello, bla-bla-bla....</em></span>
                               by <span><a href="#">Sony</a></span>, today at 1.56 pm
-                              <span class="text-description">Lorem ipsum dolor sit amet, consectetur<br>
+                              <span class="text-description">Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit, sed do eiusmod temport......
                               </span>
                             </p>
-                          </div>
-                        </th> 
+                            </div>
+                        </td> 
                         <td class="category">Main Forum</td> 
                         <td class="posts-views">170</td> 
                         <td class="posts-views">2k</td> 
                         <td><span class="name">arthur</span><br><span class="date">11.26.15</span></td>
-                      </tr> 
+                      </tr>
                       <tr class="tag-wrap">
-                        <td colspan="1">
+                        <td colspan="2">
                           <a class="btn btn-default push-sides-30 read-more" href="#" role="button">Read more</a>
                         </td>
-                        <td colspan="4">
+                        <td colspan="4" class="">
                           <a class="btn btn-default" href="#" role="tag">Tag</a>
                           <a class="btn btn-default" href="#" role="tag">Tag 1</a>
                           <a class="btn btn-default" href="#" role="tag">Tag 2</a>
@@ -268,31 +257,31 @@
                         </td> 
                       </tr>
                       <tr class="spacer"></tr>
-                      <tr> 
-                        <th scope="row">
-                          <div class="soft-left-0 rating-star">
-                            <img id="star-2" src="images/not-choosed-star.png" data-swap="images/choosed-star.png" data-src="images/not-choosed-star.png">
-                          </div>
+                      <tr>
+                        <td class="first-col rating-star">
+                          <img id="star-1" src="images/not-choosed-star.png" data-swap="images/choosed-star.png" data-src="images/not-choosed-star.png">
+                        </td> 
+                        <td>
                           <div class="topic-wrap">
                             <p class="title push-bottom-reset">
                               <span><em>Hello, bla-bla-bla....</em></span>
                               by <span><a href="#">Sony</a></span>, today at 1.56 pm
-                              <span class="text-description">Lorem ipsum dolor sit amet, consectetur<br>
+                              <span class="text-description">Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit, sed do eiusmod temport......
                               </span>
                             </p>
-                          </div>
-                        </th> 
+                            </div>
+                        </td> 
                         <td class="category">Main Forum</td> 
                         <td class="posts-views">170</td> 
                         <td class="posts-views">2k</td> 
                         <td><span class="name">arthur</span><br><span class="date">11.26.15</span></td>
-                      </tr> 
+                      </tr>
                       <tr class="tag-wrap">
-                        <td colspan="1">
+                        <td colspan="2">
                           <a class="btn btn-default push-sides-30 read-more" href="#" role="button">Read more</a>
                         </td>
-                        <td colspan="4">
+                        <td colspan="4" class="">
                           <a class="btn btn-default" href="#" role="tag">Tag</a>
                           <a class="btn btn-default" href="#" role="tag">Tag 1</a>
                           <a class="btn btn-default" href="#" role="tag">Tag 2</a>
@@ -302,31 +291,31 @@
                         </td> 
                       </tr>
                       <tr class="spacer"></tr>
-                      <tr> 
-                        <th scope="row">
-                          <div class="soft-left-0 rating-star">
-                            <img id="star-3" src="images/not-choosed-star.png" data-swap="images/choosed-star.png" data-src="images/not-choosed-star.png">
-                          </div>
+                      <tr>
+                        <td class="first-col rating-star">
+                          <img id="star-1" src="images/not-choosed-star.png" data-swap="images/choosed-star.png" data-src="images/not-choosed-star.png">
+                        </td> 
+                        <td>
                           <div class="topic-wrap">
                             <p class="title push-bottom-reset">
                               <span><em>Hello, bla-bla-bla....</em></span>
                               by <span><a href="#">Sony</a></span>, today at 1.56 pm
-                              <span class="text-description">Lorem ipsum dolor sit amet, consectetur<br>
+                              <span class="text-description">Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit, sed do eiusmod temport......
                               </span>
                             </p>
-                          </div>
-                        </th> 
+                            </div>
+                        </td> 
                         <td class="category">Main Forum</td> 
                         <td class="posts-views">170</td> 
                         <td class="posts-views">2k</td> 
                         <td><span class="name">arthur</span><br><span class="date">11.26.15</span></td>
-                      </tr> 
+                      </tr>
                       <tr class="tag-wrap">
-                        <td colspan="1">
+                        <td colspan="2">
                           <a class="btn btn-default push-sides-30 read-more" href="#" role="button">Read more</a>
                         </td>
-                        <td colspan="4">
+                        <td colspan="4" class="">
                           <a class="btn btn-default" href="#" role="tag">Tag</a>
                           <a class="btn btn-default" href="#" role="tag">Tag 1</a>
                           <a class="btn btn-default" href="#" role="tag">Tag 2</a>
@@ -336,31 +325,31 @@
                         </td> 
                       </tr>
                       <tr class="spacer"></tr>
-                      <tr> 
-                        <th scope="row">
-                          <div class="soft-left-0 rating-star">
-                            <img id="star-4" src="images/not-choosed-star.png" data-swap="images/choosed-star.png" data-src="images/not-choosed-star.png">
-                          </div>
+                      <tr>
+                        <td class="first-col rating-star">
+                          <img id="star-1" src="images/not-choosed-star.png" data-swap="images/choosed-star.png" data-src="images/not-choosed-star.png">
+                        </td> 
+                        <td>
                           <div class="topic-wrap">
                             <p class="title push-bottom-reset">
                               <span><em>Hello, bla-bla-bla....</em></span>
                               by <span><a href="#">Sony</a></span>, today at 1.56 pm
-                              <span class="text-description">Lorem ipsum dolor sit amet, consectetur<br>
+                              <span class="text-description">Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit, sed do eiusmod temport......
                               </span>
                             </p>
-                          </div>
-                        </th> 
+                            </div>
+                        </td> 
                         <td class="category">Main Forum</td> 
                         <td class="posts-views">170</td> 
                         <td class="posts-views">2k</td> 
                         <td><span class="name">arthur</span><br><span class="date">11.26.15</span></td>
-                      </tr> 
+                      </tr>
                       <tr class="tag-wrap">
-                        <td colspan="1">
+                        <td colspan="2">
                           <a class="btn btn-default push-sides-30 read-more" href="#" role="button">Read more</a>
                         </td>
-                        <td colspan="4">
+                        <td colspan="4" class="">
                           <a class="btn btn-default" href="#" role="tag">Tag</a>
                           <a class="btn btn-default" href="#" role="tag">Tag 1</a>
                           <a class="btn btn-default" href="#" role="tag">Tag 2</a>
@@ -370,31 +359,31 @@
                         </td> 
                       </tr>
                       <tr class="spacer"></tr>
-                      <tr> 
-                        <th scope="row">
-                          <div class="soft-left-0 rating-star">
-                            <img id="star-5" src="images/not-choosed-star.png" data-swap="images/choosed-star.png" data-src="images/not-choosed-star.png">
-                          </div>
+                      <tr>
+                        <td class="first-col rating-star">
+                          <img id="star-1" src="images/not-choosed-star.png" data-swap="images/choosed-star.png" data-src="images/not-choosed-star.png">
+                        </td> 
+                        <td>
                           <div class="topic-wrap">
                             <p class="title push-bottom-reset">
                               <span><em>Hello, bla-bla-bla....</em></span>
                               by <span><a href="#">Sony</a></span>, today at 1.56 pm
-                              <span class="text-description">Lorem ipsum dolor sit amet, consectetur<br>
+                              <span class="text-description">Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit, sed do eiusmod temport......
                               </span>
                             </p>
-                          </div>
-                        </th> 
+                            </div>
+                        </td> 
                         <td class="category">Main Forum</td> 
                         <td class="posts-views">170</td> 
                         <td class="posts-views">2k</td> 
                         <td><span class="name">arthur</span><br><span class="date">11.26.15</span></td>
-                      </tr> 
+                      </tr>
                       <tr class="tag-wrap">
-                        <td colspan="1">
+                        <td colspan="2">
                           <a class="btn btn-default push-sides-30 read-more" href="#" role="button">Read more</a>
                         </td>
-                        <td colspan="4">
+                        <td colspan="4" class="">
                           <a class="btn btn-default" href="#" role="tag">Tag</a>
                           <a class="btn btn-default" href="#" role="tag">Tag 1</a>
                           <a class="btn btn-default" href="#" role="tag">Tag 2</a>
@@ -404,31 +393,31 @@
                         </td> 
                       </tr>
                       <tr class="spacer"></tr>
-                      <tr> 
-                        <th scope="row">
-                          <div class="soft-left-0 rating-star">
-                            <img id="star-6" src="images/not-choosed-star.png" data-swap="images/choosed-star.png" data-src="images/not-choosed-star.png">
-                          </div>
+                      <tr>
+                        <td class="first-col rating-star">
+                          <img id="star-1" src="images/not-choosed-star.png" data-swap="images/choosed-star.png" data-src="images/not-choosed-star.png">
+                        </td> 
+                        <td>
                           <div class="topic-wrap">
                             <p class="title push-bottom-reset">
                               <span><em>Hello, bla-bla-bla....</em></span>
                               by <span><a href="#">Sony</a></span>, today at 1.56 pm
-                              <span class="text-description">Lorem ipsum dolor sit amet, consectetur<br>
+                              <span class="text-description">Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit, sed do eiusmod temport......
                               </span>
                             </p>
-                          </div>
-                        </th> 
+                            </div>
+                        </td> 
                         <td class="category">Main Forum</td> 
                         <td class="posts-views">170</td> 
                         <td class="posts-views">2k</td> 
                         <td><span class="name">arthur</span><br><span class="date">11.26.15</span></td>
-                      </tr> 
+                      </tr>
                       <tr class="tag-wrap">
-                        <td colspan="1">
+                        <td colspan="2">
                           <a class="btn btn-default push-sides-30 read-more" href="#" role="button">Read more</a>
                         </td>
-                        <td colspan="4">
+                        <td colspan="4" class="">
                           <a class="btn btn-default" href="#" role="tag">Tag</a>
                           <a class="btn btn-default" href="#" role="tag">Tag 1</a>
                           <a class="btn btn-default" href="#" role="tag">Tag 2</a>
@@ -438,31 +427,31 @@
                         </td> 
                       </tr>
                       <tr class="spacer"></tr>
-                      <tr> 
-                        <th scope="row">
-                          <div class="soft-left-0 rating-star">
-                            <img id="star-7" src="images/not-choosed-star.png" data-swap="images/choosed-star.png" data-src="images/not-choosed-star.png">
-                          </div>
+                      <tr>
+                        <td class="first-col rating-star">
+                          <img id="star-1" src="images/not-choosed-star.png" data-swap="images/choosed-star.png" data-src="images/not-choosed-star.png">
+                        </td> 
+                        <td>
                           <div class="topic-wrap">
                             <p class="title push-bottom-reset">
                               <span><em>Hello, bla-bla-bla....</em></span>
                               by <span><a href="#">Sony</a></span>, today at 1.56 pm
-                              <span class="text-description">Lorem ipsum dolor sit amet, consectetur<br>
+                              <span class="text-description">Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit, sed do eiusmod temport......
                               </span>
                             </p>
-                          </div>
-                        </th> 
+                            </div>
+                        </td> 
                         <td class="category">Main Forum</td> 
                         <td class="posts-views">170</td> 
                         <td class="posts-views">2k</td> 
                         <td><span class="name">arthur</span><br><span class="date">11.26.15</span></td>
-                      </tr> 
+                      </tr>
                       <tr class="tag-wrap">
-                        <td colspan="1">
+                        <td colspan="2">
                           <a class="btn btn-default push-sides-30 read-more" href="#" role="button">Read more</a>
                         </td>
-                        <td colspan="4">
+                        <td colspan="4" class="">
                           <a class="btn btn-default" href="#" role="tag">Tag</a>
                           <a class="btn btn-default" href="#" role="tag">Tag 1</a>
                           <a class="btn btn-default" href="#" role="tag">Tag 2</a>
@@ -472,31 +461,31 @@
                         </td> 
                       </tr>
                       <tr class="spacer"></tr>
-                      <tr> 
-                        <th scope="row">
-                          <div class="soft-left-0 rating-star">
-                            <img id="star-8" src="images/not-choosed-star.png" data-swap="images/choosed-star.png" data-src="images/not-choosed-star.png">
-                          </div>
+                      <tr>
+                        <td class="first-col rating-star">
+                          <img id="star-1" src="images/not-choosed-star.png" data-swap="images/choosed-star.png" data-src="images/not-choosed-star.png">
+                        </td> 
+                        <td>
                           <div class="topic-wrap">
                             <p class="title push-bottom-reset">
                               <span><em>Hello, bla-bla-bla....</em></span>
                               by <span><a href="#">Sony</a></span>, today at 1.56 pm
-                              <span class="text-description">Lorem ipsum dolor sit amet, consectetur<br>
+                              <span class="text-description">Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit, sed do eiusmod temport......
                               </span>
                             </p>
-                          </div>
-                        </th> 
+                            </div>
+                        </td> 
                         <td class="category">Main Forum</td> 
                         <td class="posts-views">170</td> 
                         <td class="posts-views">2k</td> 
                         <td><span class="name">arthur</span><br><span class="date">11.26.15</span></td>
-                      </tr> 
+                      </tr>
                       <tr class="tag-wrap">
-                        <td colspan="1">
+                        <td colspan="2">
                           <a class="btn btn-default push-sides-30 read-more" href="#" role="button">Read more</a>
                         </td>
-                        <td colspan="4">
+                        <td colspan="4" class="">
                           <a class="btn btn-default" href="#" role="tag">Tag</a>
                           <a class="btn btn-default" href="#" role="tag">Tag 1</a>
                           <a class="btn btn-default" href="#" role="tag">Tag 2</a>
@@ -506,31 +495,31 @@
                         </td> 
                       </tr>
                       <tr class="spacer"></tr>
-                      <tr> 
-                        <th scope="row">
-                          <div class="soft-left-0 rating-star">
-                            <img id="star-9" src="images/not-choosed-star.png" data-swap="images/choosed-star.png" data-src="images/not-choosed-star.png">
-                          </div>
+                      <tr>
+                        <td class="first-col rating-star">
+                          <img id="star-1" src="images/not-choosed-star.png" data-swap="images/choosed-star.png" data-src="images/not-choosed-star.png">
+                        </td> 
+                        <td>
                           <div class="topic-wrap">
                             <p class="title push-bottom-reset">
                               <span><em>Hello, bla-bla-bla....</em></span>
                               by <span><a href="#">Sony</a></span>, today at 1.56 pm
-                              <span class="text-description">Lorem ipsum dolor sit amet, consectetur<br>
+                              <span class="text-description">Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit, sed do eiusmod temport......
                               </span>
                             </p>
-                          </div>
-                        </th> 
+                            </div>
+                        </td> 
                         <td class="category">Main Forum</td> 
                         <td class="posts-views">170</td> 
                         <td class="posts-views">2k</td> 
                         <td><span class="name">arthur</span><br><span class="date">11.26.15</span></td>
-                      </tr> 
+                      </tr>
                       <tr class="tag-wrap">
-                        <td colspan="1">
+                        <td colspan="2">
                           <a class="btn btn-default push-sides-30 read-more" href="#" role="button">Read more</a>
                         </td>
-                        <td colspan="4">
+                        <td colspan="4" class="">
                           <a class="btn btn-default" href="#" role="tag">Tag</a>
                           <a class="btn btn-default" href="#" role="tag">Tag 1</a>
                           <a class="btn btn-default" href="#" role="tag">Tag 2</a>
@@ -540,31 +529,31 @@
                         </td> 
                       </tr>
                       <tr class="spacer"></tr>
-                      <tr> 
-                        <th scope="row">
-                          <div class="soft-left-0 rating-star">
-                            <img id="star-10" src="images/not-choosed-star.png" data-swap="images/choosed-star.png" data-src="images/not-choosed-star.png">
-                          </div>
+                      <tr>
+                        <td class="first-col rating-star">
+                          <img id="star-1" src="images/not-choosed-star.png" data-swap="images/choosed-star.png" data-src="images/not-choosed-star.png">
+                        </td> 
+                        <td>
                           <div class="topic-wrap">
                             <p class="title push-bottom-reset">
                               <span><em>Hello, bla-bla-bla....</em></span>
                               by <span><a href="#">Sony</a></span>, today at 1.56 pm
-                              <span class="text-description">Lorem ipsum dolor sit amet, consectetur<br>
+                              <span class="text-description">Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit, sed do eiusmod temport......
                               </span>
                             </p>
-                          </div>
-                        </th> 
+                            </div>
+                        </td> 
                         <td class="category">Main Forum</td> 
                         <td class="posts-views">170</td> 
                         <td class="posts-views">2k</td> 
                         <td><span class="name">arthur</span><br><span class="date">11.26.15</span></td>
-                      </tr> 
+                      </tr>
                       <tr class="tag-wrap">
-                        <td colspan="1">
+                        <td colspan="2">
                           <a class="btn btn-default push-sides-30 read-more" href="#" role="button">Read more</a>
                         </td>
-                        <td colspan="4">
+                        <td colspan="4" class="">
                           <a class="btn btn-default" href="#" role="tag">Tag</a>
                           <a class="btn btn-default" href="#" role="tag">Tag 1</a>
                           <a class="btn btn-default" href="#" role="tag">Tag 2</a>
@@ -573,6 +562,7 @@
                           <a class="btn btn-default" href="#" role="tag">Tag 5</a>
                         </td> 
                       </tr>
+                      <tr class="spacer"></tr>
                     </tbody>
                   </table>
                 </div><!-- table-responsive -->
@@ -582,11 +572,11 @@
         </div><!-- content-list -->
       </section>
 
-      <div class="footer soft-ends-20 hidden-xs">
+            <div class="footer soft-ends-20 hidden-xs">
         <div class="container">
           <div class="row">
             <div class="col-md-4">
-              <h4 class="text-center">Latest updates</h4>
+              <a href="#"><h4 class="text-center">Latest updates</h4></a>
               <p>Natalia</p>
               <span>How do you say Envato in Chinese? Here's how we worked it out. enva.to/4TfPo pic.twitter.com/jzIY9XyS04 </span>
               <br>
@@ -611,15 +601,7 @@
               </ul>
             </div>
             <div class="col-md-4">
-              <h4 class="text-center">Popular topics</h4>
-              <p>What is the Meta Post</p>
-              <span>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-              </span>
-              <br>
-              <br>
-              <span>June 4 , 2014</span>
-              <div class="divider"></div>
-              <h4 class="text-center">Popular topics</h4>
+              <a href="#"><h4 class="text-center">Popular topics</h4></a>
               <p>What is the Meta Post</p>
               <span>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
               </span>
@@ -637,6 +619,7 @@
       </div>
       <!-- END MOBILE FOOTER -->
     </div>
+
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
