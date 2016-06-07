@@ -210,6 +210,7 @@
                       </div>
                     </div>
                   </form>
+                  <br>
                   <p class="text-right">3854 users</p>
                 </div><!-- Sort-by -->
 
@@ -217,7 +218,7 @@
                   <table class="table">
                     <thead>
                       <tr>
-                        <th>Name</th>
+                        <th colspan="2">Name</th>
                         <th>Joined</th> 
                         <th>Topics</th> 
                         <th>Visits</th> 
@@ -227,145 +228,667 @@
                     <tbody> 
                       <tr class="spacer"></tr>
                       <tr> 
-                        <th scope="row">
-                          <img src="images/user-photo-circle.png" alt="" class="img-circle img-responsive user-photo-circle">
+                        <td class="first-col">
+                          <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                        </td>
+                        <td>
                           <div class="user-wrap">
-                            <p class="title">Natalia Ulianets</p>
+                            <a type="button" class="btn hidden-xs" data-container="body" data-toggle="popover" data-placement="right" data-popover-content="#styled-popover">Natalia Ulianets
+                            </a>
+                            <div class="hidden" id="styled-popover">
+                              <div class="popover-body">
+                                <div class="media-left">
+                                  <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                                </div>
+                                <div class="media-body">
+                                  <div class="popover-title-wrap">
+                                    <h4>Natalia Ulianets</h4>
+                                    <a class="btn follow-btn" href="#" role="button">Follow</a>
+                                  </div>
+                                  <ul>
+                                    <li><strong>Registration date</strong><span class="pull-right">2014-06-04</span></li>
+                                    <li><strong>Country</strong><span class="pull-right">Egypt</span></li>
+                                    <li><strong>Posts</strong><span class="pull-right">20</span></li>
+                                    <li><strong>Comments</strong><span class="pull-right">55</span></li>
+                                    <li><strong>Best answers</strong><span class="pull-right">22</span></li>
+                                    <li><strong>Followers</strong><span class="pull-right">82</span></li>
+                                  </ul>
+                                  <a class="pull-right" href="#" role="button">view all profile</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- mobile popover -->
+                            <a type="button" class="btn visible-xs-inline-block" data-container="body" data-toggle="popover" data-placement="bottom" data-popover-content="#styled-popover">Natalia Ulianets
+                            </a>
+                            <div class="hidden" id="styled-popover">
+                              <div class="popover-body">
+                                <div class="media-left">
+                                  <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                                </div>
+                                <div class="media-body">
+                                  <div class="popover-title-wrap">
+                                    <h4>Natalia Ulianets</h4>
+                                    <a class="btn follow-btn" href="#" role="button">Follow</a>
+                                  </div>
+                                  <ul>
+                                    <li><strong>Registration date</strong><span class="pull-right">2014-06-04</span></li>
+                                    <li><strong>Country</strong><span class="pull-right">Egypt</span></li>
+                                    <li><strong>Posts</strong><span class="pull-right">20</span></li>
+                                    <li><strong>Comments</strong><span class="pull-right">55</span></li>
+                                    <li><strong>Best answers</strong><span class="pull-right">22</span></li>
+                                    <li><strong>Followers</strong><span class="pull-right">82</span></li>
+                                  </ul>
+                                  <a class="pull-right" href="#" role="button">view all profile</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- end mobile popover -->
+                            <br>
                             <span class="label label-default status">status</span>
                           </div>
-                        </th> 
+                        </td> 
                         <td>12.05.2015</td> 
                         <td>80</td> 
                         <td>35</td> 
-                        <td><span class="online"></span></td>
+                        <td>
+                          <span class="online" data-toggle="tooltip" data-placement="top" title="online"></span>
+                        </td>
                       </tr> 
                       <tr class="spacer"></tr>
                       <tr> 
-                        <th scope="row">
-                          <img src="images/user-photo-circle.png" alt="" class="img-circle img-responsive user-photo-circle">
+                        <td class="first-col">
+                          <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                        </td>
+                        <td>
                           <div class="user-wrap">
-                            <p class="title">Zebra</p>
+                            <a type="button" class="btn hidden-xs" data-container="body" data-toggle="popover" data-placement="right" data-popover-content="#styled-popover-1">Zebra
+                            </a>
+                            <div class="hidden" id="styled-popover-1">
+                              <div class="popover-body">
+                                <div class="media-left">
+                                  <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                                </div>
+                                <div class="media-body">
+                                  <div class="popover-title-wrap">
+                                    <h4>Zebra</h4>
+                                    <a class="btn follow-btn" href="#" role="button">Follow</a>
+                                  </div>
+                                  <ul>
+                                    <li><strong>Registration date</strong><span class="pull-right">2014-06-04</span></li>
+                                    <li><strong>Country</strong><span class="pull-right">Egypt</span></li>
+                                    <li><strong>Posts</strong><span class="pull-right">20</span></li>
+                                    <li><strong>Comments</strong><span class="pull-right">55</span></li>
+                                    <li><strong>Best answers</strong><span class="pull-right">22</span></li>
+                                    <li><strong>Followers</strong><span class="pull-right">82</span></li>
+                                  </ul>
+                                  <a class="pull-right" href="#" role="button">view all profile</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- mobile popover -->
+                            <a type="button" class="btn visible-xs-inline-block" data-container="body" data-toggle="popover" data-placement="bottom" data-popover-content="#styled-popover-1">Zebra
+                            </a>
+                            <div class="hidden" id="styled-popover-1">
+                              <div class="popover-body">
+                                <div class="media-left">
+                                  <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                                </div>
+                                <div class="media-body">
+                                  <div class="popover-title-wrap">
+                                    <h4>Zebra</h4>
+                                    <a class="btn follow-btn" href="#" role="button">Follow</a>
+                                  </div>
+                                  <ul>
+                                    <li><strong>Registration date</strong><span class="pull-right">2014-06-04</span></li>
+                                    <li><strong>Country</strong><span class="pull-right">Egypt</span></li>
+                                    <li><strong>Posts</strong><span class="pull-right">20</span></li>
+                                    <li><strong>Comments</strong><span class="pull-right">55</span></li>
+                                    <li><strong>Best answers</strong><span class="pull-right">22</span></li>
+                                    <li><strong>Followers</strong><span class="pull-right">82</span></li>
+                                  </ul>
+                                  <a class="pull-right" href="#" role="button">view all profile</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- end mobile popover -->
+                            <br>
                             <span class="label label-default status">status</span>
                           </div>
-                        </th> 
+                        </td> 
                         <td>12.05.2015</td> 
                         <td>80</td> 
                         <td>35</td> 
-                        <td><span class="offline"></span></td>
+                        <td><span class="offline" data-toggle="tooltip" data-placement="top" title="offline"></span></td>
                       </tr> 
                       <tr class="spacer"></tr>
                       <tr> 
-                        <th scope="row">
-                          <img src="images/user-photo-circle.png" alt="" class="img-circle img-responsive user-photo-circle">
+                        <td class="first-col">
+                          <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                        </td>
+                        <td>
                           <div class="user-wrap">
-                            <p class="title">James Parker</p>
+                            <a type="button" class="btn hidden-xs" data-container="body" data-toggle="popover" data-placement="right" data-popover-content="#styled-popover-2">James Parker
+                            </a>
+                            <div class="hidden" id="styled-popover-2">
+                              <div class="popover-body">
+                                <div class="media-left">
+                                  <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                                </div>
+                                <div class="media-body">
+                                  <div class="popover-title-wrap">
+                                    <h4>James Parker</h4>
+                                    <a class="btn follow-btn" href="#" role="button">Follow</a>
+                                  </div>
+                                  <ul>
+                                    <li><strong>Registration date</strong><span class="pull-right">2014-06-04</span></li>
+                                    <li><strong>Country</strong><span class="pull-right">Egypt</span></li>
+                                    <li><strong>Posts</strong><span class="pull-right">20</span></li>
+                                    <li><strong>Comments</strong><span class="pull-right">55</span></li>
+                                    <li><strong>Best answers</strong><span class="pull-right">22</span></li>
+                                    <li><strong>Followers</strong><span class="pull-right">82</span></li>
+                                  </ul>
+                                  <a class="pull-right" href="#" role="button">view all profile</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- mobile popover -->
+                            <a type="button" class="btn visible-xs-inline-block" data-container="body" data-toggle="popover" data-placement="bottom" data-popover-content="#styled-popover-2">James Parker
+                            </a>
+                            <div class="hidden" id="styled-popover-2">
+                              <div class="popover-body">
+                                <div class="media-left">
+                                  <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                                </div>
+                                <div class="media-body">
+                                  <div class="popover-title-wrap">
+                                    <h4>James Parker</h4>
+                                    <a class="btn follow-btn" href="#" role="button">Follow</a>
+                                  </div>
+                                  <ul>
+                                    <li><strong>Registration date</strong><span class="pull-right">2014-06-04</span></li>
+                                    <li><strong>Country</strong><span class="pull-right">Egypt</span></li>
+                                    <li><strong>Posts</strong><span class="pull-right">20</span></li>
+                                    <li><strong>Comments</strong><span class="pull-right">55</span></li>
+                                    <li><strong>Best answers</strong><span class="pull-right">22</span></li>
+                                    <li><strong>Followers</strong><span class="pull-right">82</span></li>
+                                  </ul>
+                                  <a class="pull-right" href="#" role="button">view all profile</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- end mobile popover -->
+                            <br>
                             <span class="label label-default status">status</span>
                           </div>
-                        </th> 
+                        </td> 
                         <td>12.05.2015</td> 
                         <td>80</td> 
                         <td>35</td> 
-                        <td><span class="offline"></span></td>
+                        <td><span class="offline" data-toggle="tooltip" data-placement="top" title="offline"></span></td>
                       </tr> 
                       <tr class="spacer"></tr>
                       <tr> 
-                        <th scope="row">
-                          <img src="images/user-photo-circle.png" alt="" class="img-circle img-responsive user-photo-circle">
+                        <td class="first-col">
+                          <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                        </td>
+                        <td>
                           <div class="user-wrap">
-                            <p class="title">Bird 2016</p>
+                            <a type="button" class="btn hidden-xs" data-container="body" data-toggle="popover" data-placement="right" data-popover-content="#styled-popover-3">Bird 2016
+                            </a>
+                            <div class="hidden" id="styled-popover-3">
+                              <div class="popover-body">
+                                <div class="media-left">
+                                  <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                                </div>
+                                <div class="media-body">
+                                  <div class="popover-title-wrap">
+                                    <h4>Bird 2016</h4>
+                                    <a class="btn follow-btn" href="#" role="button">Follow</a>
+                                  </div>
+                                  <ul>
+                                    <li><strong>Registration date</strong><span class="pull-right">2014-06-04</span></li>
+                                    <li><strong>Country</strong><span class="pull-right">Egypt</span></li>
+                                    <li><strong>Posts</strong><span class="pull-right">20</span></li>
+                                    <li><strong>Comments</strong><span class="pull-right">55</span></li>
+                                    <li><strong>Best answers</strong><span class="pull-right">22</span></li>
+                                    <li><strong>Followers</strong><span class="pull-right">82</span></li>
+                                  </ul>
+                                  <a class="pull-right" href="#" role="button">view all profile</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- mobile popover -->
+                            <a type="button" class="btn visible-xs-inline-block" data-container="body" data-toggle="popover" data-placement="bottom" data-popover-content="#styled-popover-3">Bird 2016
+                            </a>
+                            <div class="hidden" id="styled-popover-3">
+                              <div class="popover-body">
+                                <div class="media-left">
+                                  <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                                </div>
+                                <div class="media-body">
+                                  <div class="popover-title-wrap">
+                                    <h4>Bird 2016</h4>
+                                    <a class="btn follow-btn" href="#" role="button">Follow</a>
+                                  </div>
+                                  <ul>
+                                    <li><strong>Registration date</strong><span class="pull-right">2014-06-04</span></li>
+                                    <li><strong>Country</strong><span class="pull-right">Egypt</span></li>
+                                    <li><strong>Posts</strong><span class="pull-right">20</span></li>
+                                    <li><strong>Comments</strong><span class="pull-right">55</span></li>
+                                    <li><strong>Best answers</strong><span class="pull-right">22</span></li>
+                                    <li><strong>Followers</strong><span class="pull-right">82</span></li>
+                                  </ul>
+                                  <a class="pull-right" href="#" role="button">view all profile</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- end mobile popover -->
+                            <br>
                             <span class="label label-default status">status</span>
                           </div>
-                        </th> 
+                        </td> 
                         <td>12.05.2015</td> 
                         <td>80</td> 
                         <td>35</td> 
-                        <td><span class="online"></span></td>
+                        <td><span class="online" data-toggle="tooltip" data-placement="top" title="online"></span></td>
                       </tr> 
                       <tr class="spacer"></tr>
                       <tr> 
-                        <th scope="row">
-                          <img src="images/user-photo-circle.png" alt="" class="img-circle img-responsive user-photo-circle">
+                        <td class="first-col">
+                          <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                        </td>
+                        <td>
                           <div class="user-wrap">
-                            <p class="title">Amanda</p>
+                            <a type="button" class="btn hidden-xs" data-container="body" data-toggle="popover" data-placement="right" data-popover-content="#styled-popover-4">Amanda
+                            </a>
+                            <div class="hidden" id="styled-popover-4">
+                              <div class="popover-body">
+                                <div class="media-left">
+                                  <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                                </div>
+                                <div class="media-body">
+                                  <div class="popover-title-wrap">
+                                    <h4>Amanda</h4>
+                                    <a class="btn follow-btn" href="#" role="button">Follow</a>
+                                  </div>
+                                  <ul>
+                                    <li><strong>Registration date</strong><span class="pull-right">2014-06-04</span></li>
+                                    <li><strong>Country</strong><span class="pull-right">Egypt</span></li>
+                                    <li><strong>Posts</strong><span class="pull-right">20</span></li>
+                                    <li><strong>Comments</strong><span class="pull-right">55</span></li>
+                                    <li><strong>Best answers</strong><span class="pull-right">22</span></li>
+                                    <li><strong>Followers</strong><span class="pull-right">82</span></li>
+                                  </ul>
+                                  <a class="pull-right" href="#" role="button">view all profile</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- mobile popover -->
+                            <a type="button" class="btn visible-xs-inline-block" data-container="body" data-toggle="popover" data-placement="bottom" data-popover-content="#styled-popover-4">Amanda
+                            </a>
+                            <div class="hidden" id="styled-popover-4">
+                              <div class="popover-body">
+                                <div class="media-left">
+                                  <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                                </div>
+                                <div class="media-body">
+                                  <div class="popover-title-wrap">
+                                    <h4>Amanda</h4>
+                                    <a class="btn follow-btn" href="#" role="button">Follow</a>
+                                  </div>
+                                  <ul>
+                                    <li><strong>Registration date</strong><span class="pull-right">2014-06-04</span></li>
+                                    <li><strong>Country</strong><span class="pull-right">Egypt</span></li>
+                                    <li><strong>Posts</strong><span class="pull-right">20</span></li>
+                                    <li><strong>Comments</strong><span class="pull-right">55</span></li>
+                                    <li><strong>Best answers</strong><span class="pull-right">22</span></li>
+                                    <li><strong>Followers</strong><span class="pull-right">82</span></li>
+                                  </ul>
+                                  <a class="pull-right" href="#" role="button">view all profile</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- end mobile popover -->
+                            <br>
                             <span class="label label-default status">status</span>
                           </div>
-                        </th> 
+                        </td> 
                         <td>12.05.2015</td> 
                         <td>80</td> 
                         <td>35</td> 
-                        <td><span class="offline"></span></td>
+                        <td><span class="offline" data-toggle="tooltip" data-placement="top" title="offline"></span></td>
                       </tr> 
                       <tr class="spacer"></tr>
                       <tr> 
-                        <th scope="row">
-                          <img src="images/user-photo-circle.png" alt="" class="img-circle img-responsive user-photo-circle">
+                        <td class="first-col">
+                          <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                        </td>
+                        <td>
                           <div class="user-wrap">
-                            <p class="title">Gretta</p>
+                            <a type="button" class="btn hidden-xs" data-container="body" data-toggle="popover" data-placement="right" data-popover-content="#styled-popover-5">Gretta
+                            </a>
+                            <div class="hidden" id="styled-popover-5">
+                              <div class="popover-body">
+                                <div class="media-left">
+                                  <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                                </div>
+                                <div class="media-body">
+                                  <div class="popover-title-wrap">
+                                    <h4>Gretta</h4>
+                                    <a class="btn follow-btn" href="#" role="button">Follow</a>
+                                  </div>
+                                  <ul>
+                                    <li><strong>Registration date</strong><span class="pull-right">2014-06-04</span></li>
+                                    <li><strong>Country</strong><span class="pull-right">Egypt</span></li>
+                                    <li><strong>Posts</strong><span class="pull-right">20</span></li>
+                                    <li><strong>Comments</strong><span class="pull-right">55</span></li>
+                                    <li><strong>Best answers</strong><span class="pull-right">22</span></li>
+                                    <li><strong>Followers</strong><span class="pull-right">82</span></li>
+                                  </ul>
+                                  <a class="pull-right" href="#" role="button">view all profile</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- mobile popover -->
+                            <a type="button" class="btn visible-xs-inline-block" data-container="body" data-toggle="popover" data-placement="bottom" data-popover-content="#styled-popover-5">Gretta
+                            </a>
+                            <div class="hidden" id="styled-popover-5">
+                              <div class="popover-body">
+                                <div class="media-left">
+                                  <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                                </div>
+                                <div class="media-body">
+                                  <div class="popover-title-wrap">
+                                    <h4>Gretta</h4>
+                                    <a class="btn follow-btn" href="#" role="button">Follow</a>
+                                  </div>
+                                  <ul>
+                                    <li><strong>Registration date</strong><span class="pull-right">2014-06-04</span></li>
+                                    <li><strong>Country</strong><span class="pull-right">Egypt</span></li>
+                                    <li><strong>Posts</strong><span class="pull-right">20</span></li>
+                                    <li><strong>Comments</strong><span class="pull-right">55</span></li>
+                                    <li><strong>Best answers</strong><span class="pull-right">22</span></li>
+                                    <li><strong>Followers</strong><span class="pull-right">82</span></li>
+                                  </ul>
+                                  <a class="pull-right" href="#" role="button">view all profile</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- end mobile popover -->
+                            <br>
                             <span class="label label-default status">status</span>
                           </div>
-                        </th> 
+                        </td> 
                         <td>12.05.2015</td> 
                         <td>80</td> 
                         <td>35</td> 
-                        <td><span class="online"></span></td>
+                        <td><span class="online" data-toggle="tooltip" data-placement="top" title="online"></span></td>
                       </tr> 
                       <tr class="spacer"></tr>
                       <tr> 
-                        <th scope="row">
-                          <img src="images/user-photo-circle.png" alt="" class="img-circle img-responsive user-photo-circle">
+                        <td class="first-col">
+                          <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                        </td>
+                        <td>
                           <div class="user-wrap">
-                            <p class="title">Lady X</p>
+                            <a type="button" class="btn hidden-xs" data-container="body" data-toggle="popover" data-placement="right" data-popover-content="#styled-popover-6">Ledy X
+                            </a>
+                            <div class="hidden" id="styled-popover-6">
+                              <div class="popover-body">
+                                <div class="media-left">
+                                  <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                                </div>
+                                <div class="media-body">
+                                  <div class="popover-title-wrap">
+                                    <h4>Ledy X</h4>
+                                    <a class="btn follow-btn" href="#" role="button">Follow</a>
+                                  </div>
+                                  <ul>
+                                    <li><strong>Registration date</strong><span class="pull-right">2014-06-04</span></li>
+                                    <li><strong>Country</strong><span class="pull-right">Egypt</span></li>
+                                    <li><strong>Posts</strong><span class="pull-right">20</span></li>
+                                    <li><strong>Comments</strong><span class="pull-right">55</span></li>
+                                    <li><strong>Best answers</strong><span class="pull-right">22</span></li>
+                                    <li><strong>Followers</strong><span class="pull-right">82</span></li>
+                                  </ul>
+                                  <a class="pull-right" href="#" role="button">view all profile</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- mobile popover -->
+                            <a type="button" class="btn visible-xs-inline-block" data-container="body" data-toggle="popover" data-placement="bottom" data-popover-content="#styled-popover-6">Ledy X
+                            </a>
+                            <div class="hidden" id="styled-popover-6">
+                              <div class="popover-body">
+                                <div class="media-left">
+                                  <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                                </div>
+                                <div class="media-body">
+                                  <div class="popover-title-wrap">
+                                    <h4>Ledy X</h4>
+                                    <a class="btn follow-btn" href="#" role="button">Follow</a>
+                                  </div>
+                                  <ul>
+                                    <li><strong>Registration date</strong><span class="pull-right">2014-06-04</span></li>
+                                    <li><strong>Country</strong><span class="pull-right">Egypt</span></li>
+                                    <li><strong>Posts</strong><span class="pull-right">20</span></li>
+                                    <li><strong>Comments</strong><span class="pull-right">55</span></li>
+                                    <li><strong>Best answers</strong><span class="pull-right">22</span></li>
+                                    <li><strong>Followers</strong><span class="pull-right">82</span></li>
+                                  </ul>
+                                  <a class="pull-right" href="#" role="button">view all profile</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- end mobile popover -->
+                            <br>
                             <span class="label label-default status">status</span>
                           </div>
-                        </th> 
+                        </td> 
                         <td>12.05.2015</td> 
                         <td>80</td> 
                         <td>35</td> 
-                        <td><span class="online"></span></td>
+                        <td><span class="online" data-toggle="tooltip" data-placement="top" title="online"></span></td>
                       </tr> 
                       <tr class="spacer"></tr>
                       <tr> 
-                        <th scope="row">
-                          <img src="images/user-photo-circle.png" alt="" class="img-circle img-responsive user-photo-circle">
+                        <td class="first-col">
+                          <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                        </td>
+                        <td>
                           <div class="user-wrap">
-                            <p class="title">Alena</p>
+                            <a type="button" class="btn hidden-xs" data-container="body" data-toggle="popover" data-placement="right" data-popover-content="#styled-popover-7">Alena
+                            </a>
+                            <div class="hidden" id="styled-popover-7">
+                              <div class="popover-body">
+                                <div class="media-left">
+                                  <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                                </div>
+                                <div class="media-body">
+                                  <div class="popover-title-wrap">
+                                    <h4>Alena</h4>
+                                    <a class="btn follow-btn" href="#" role="button">Follow</a>
+                                  </div>
+                                  <ul>
+                                    <li><strong>Registration date</strong><span class="pull-right">2014-06-04</span></li>
+                                    <li><strong>Country</strong><span class="pull-right">Egypt</span></li>
+                                    <li><strong>Posts</strong><span class="pull-right">20</span></li>
+                                    <li><strong>Comments</strong><span class="pull-right">55</span></li>
+                                    <li><strong>Best answers</strong><span class="pull-right">22</span></li>
+                                    <li><strong>Followers</strong><span class="pull-right">82</span></li>
+                                  </ul>
+                                  <a class="pull-right" href="#" role="button">view all profile</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- mobile popover -->
+                            <a type="button" class="btn visible-xs-inline-block" data-container="body" data-toggle="popover" data-placement="bottom" data-popover-content="#styled-popove7">Alena
+                            </a>
+                            <div class="hidden" id="styled-popover-7">
+                              <div class="popover-body">
+                                <div class="media-left">
+                                  <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                                </div>
+                                <div class="media-body">
+                                  <div class="popover-title-wrap">
+                                    <h4>Alena</h4>
+                                    <a class="btn follow-btn" href="#" role="button">Follow</a>
+                                  </div>
+                                  <ul>
+                                    <li><strong>Registration date</strong><span class="pull-right">2014-06-04</span></li>
+                                    <li><strong>Country</strong><span class="pull-right">Egypt</span></li>
+                                    <li><strong>Posts</strong><span class="pull-right">20</span></li>
+                                    <li><strong>Comments</strong><span class="pull-right">55</span></li>
+                                    <li><strong>Best answers</strong><span class="pull-right">22</span></li>
+                                    <li><strong>Followers</strong><span class="pull-right">82</span></li>
+                                  </ul>
+                                  <a class="pull-right" href="#" role="button">view all profile</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- end mobile popover -->
+                            <br>
                             <span class="label label-default status">status</span>
                           </div>
-                        </th> 
+                        </td> 
                         <td>12.05.2015</td> 
                         <td>80</td> 
                         <td>35</td> 
-                        <td><span class="offline"></span></td>
+                        <td><span class="offline" data-toggle="tooltip" data-placement="top" title="offline"></span></td>
                       </tr> 
                       <tr class="spacer"></tr>
                       <tr> 
-                        <th scope="row">
-                          <img src="images/user-photo-circle.png" alt="" class="img-circle img-responsive user-photo-circle">
+                        <td class="first-col">
+                          <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                        </td>
+                        <td>
                           <div class="user-wrap">
-                            <p class="title">Harry</p>
+                            <a type="button" class="btn hidden-xs" data-container="body" data-toggle="popover" data-placement="right" data-popover-content="#styled-popover-8">Harry
+                            </a>
+                            <div class="hidden" id="styled-popover-8">
+                              <div class="popover-body">
+                                <div class="media-left">
+                                  <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                                </div>
+                                <div class="media-body">
+                                  <div class="popover-title-wrap">
+                                    <h4>Harry</h4>
+                                    <a class="btn follow-btn" href="#" role="button">Follow</a>
+                                  </div>
+                                  <ul>
+                                    <li><strong>Registration date</strong><span class="pull-right">2014-06-04</span></li>
+                                    <li><strong>Country</strong><span class="pull-right">Egypt</span></li>
+                                    <li><strong>Posts</strong><span class="pull-right">20</span></li>
+                                    <li><strong>Comments</strong><span class="pull-right">55</span></li>
+                                    <li><strong>Best answers</strong><span class="pull-right">22</span></li>
+                                    <li><strong>Followers</strong><span class="pull-right">82</span></li>
+                                  </ul>
+                                  <a class="pull-right" href="#" role="button">view all profile</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- mobile popover -->
+                            <a type="button" class="btn visible-xs-inline-block" data-container="body" data-toggle="popover" data-placement="bottom" data-popover-content="#styled-popover-8">Harry
+                            </a>
+                            <div class="hidden" id="styled-popover-8">
+                              <div class="popover-body">
+                                <div class="media-left">
+                                  <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                                </div>
+                                <div class="media-body">
+                                  <div class="popover-title-wrap">
+                                    <h4>Harry</h4>
+                                    <a class="btn follow-btn" href="#" role="button">Follow</a>
+                                  </div>
+                                  <ul>
+                                    <li><strong>Registration date</strong><span class="pull-right">2014-06-04</span></li>
+                                    <li><strong>Country</strong><span class="pull-right">Egypt</span></li>
+                                    <li><strong>Posts</strong><span class="pull-right">20</span></li>
+                                    <li><strong>Comments</strong><span class="pull-right">55</span></li>
+                                    <li><strong>Best answers</strong><span class="pull-right">22</span></li>
+                                    <li><strong>Followers</strong><span class="pull-right">82</span></li>
+                                  </ul>
+                                  <a class="pull-right" href="#" role="button">view all profile</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- end mobile popover -->
+                            <br>
                             <span class="label label-default status">status</span>
                           </div>
-                        </th> 
+                        </td> 
                         <td>12.05.2015</td> 
                         <td>80</td> 
                         <td>35</td> 
-                        <td><span class="offline"></span></td>
+                        <td><span class="offline" data-toggle="tooltip" data-placement="top" title="offline"></span></td>
                       </tr> 
                       <tr class="spacer"></tr>
                       <tr> 
-                        <th scope="row">
-                          <img src="images/user-photo-circle.png" alt="" class="img-circle img-responsive user-photo-circle">
+                        <td class="first-col">
+                          <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                        </td>
+                        <td>
                           <div class="user-wrap">
-                            <p class="title">Kristina B</p>
+                            <a type="button" class="btn hidden-xs" data-container="body" data-toggle="popover" data-placement="right" data-popover-content="#styled-popover-9">Kristina B
+                            </a>
+                            <div class="hidden" id="styled-popover-9">
+                              <div class="popover-body">
+                                <div class="media-left">
+                                  <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                                </div>
+                                <div class="media-body">
+                                  <div class="popover-title-wrap">
+                                    <h4>Kristina B</h4>
+                                    <a class="btn follow-btn" href="#" role="button">Follow</a>
+                                  </div>
+                                  <ul>
+                                    <li><strong>Registration date</strong><span class="pull-right">2014-06-04</span></li>
+                                    <li><strong>Country</strong><span class="pull-right">Egypt</span></li>
+                                    <li><strong>Posts</strong><span class="pull-right">20</span></li>
+                                    <li><strong>Comments</strong><span class="pull-right">55</span></li>
+                                    <li><strong>Best answers</strong><span class="pull-right">22</span></li>
+                                    <li><strong>Followers</strong><span class="pull-right">82</span></li>
+                                  </ul>
+                                  <a class="pull-right" href="#" role="button">view all profile</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- mobile popover -->
+                            <a type="button" class="btn visible-xs-inline-block" data-container="body" data-toggle="popover" data-placement="bottom" data-popover-content="#styled-popover-9">Kristina B
+                            </a>
+                            <div class="hidden" id="styled-popover-9">
+                              <div class="popover-body">
+                                <div class="media-left">
+                                  <img src="images/user-photo-circle.png" alt="" class="img-circle user-photo-circle">
+                                </div>
+                                <div class="media-body">
+                                  <div class="popover-title-wrap">
+                                    <h4>Kristina B</h4>
+                                    <a class="btn follow-btn" href="#" role="button">Follow</a>
+                                  </div>
+                                  <ul>
+                                    <li><strong>Registration date</strong><span class="pull-right">2014-06-04</span></li>
+                                    <li><strong>Country</strong><span class="pull-right">Egypt</span></li>
+                                    <li><strong>Posts</strong><span class="pull-right">20</span></li>
+                                    <li><strong>Comments</strong><span class="pull-right">55</span></li>
+                                    <li><strong>Best answers</strong><span class="pull-right">22</span></li>
+                                    <li><strong>Followers</strong><span class="pull-right">82</span></li>
+                                  </ul>
+                                  <a class="pull-right" href="#" role="button">view all profile</a>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- end mobile popover -->
+                            <br>
                             <span class="label label-default status">status</span>
                           </div>
-                        </th> 
+                        </td> 
                         <td>12.05.2015</td> 
                         <td>80</td> 
                         <td>35</td> 
-                        <td><span class="online"></span></td>
+                        <td><span class="online" data-toggle="tooltip" data-placement="top" title="online"></span></td>
                       </tr> 
-                      <tr class="spacer"></tr>
+                      <tr class="spacer"></tr> 
                     </tbody>
                   </table>
                 </div><!-- table-responsive -->
@@ -379,7 +902,7 @@
         </div><!-- content-list -->
       </section>
 
-            <div class="footer soft-ends-20 hidden-xs">
+      <div class="footer soft-ends-20 hidden-xs">
         <div class="container">
           <div class="row">
             <div class="col-md-4">
@@ -415,6 +938,13 @@
               <br>
               <br>
               <span>June 4 , 2014</span>
+              <div class="divider"></div>
+              <p>What is the Meta Post</p>
+              <span>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+              </span>
+              <br>
+              <br>
+              <span>June 4 , 2014</span>
             </div>
           </div>
           <p class="copyright text-right push-ends-40"> &copy; 2015 selfcad.com  |  All rights reserved </p>
@@ -426,7 +956,6 @@
       </div>
       <!-- END MOBILE FOOTER -->
     </div>
-
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
