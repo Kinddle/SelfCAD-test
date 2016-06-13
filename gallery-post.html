@@ -128,6 +128,43 @@
 
         </div>
       </section><!-- main-title-block -->
+
+      <section>
+        <div class="container">
+          <div class="content-menu">
+            <div class="row">
+              <div class="col-md-4 col-sm-4">
+                <a href="gallery.html" class="text-center active">
+                  <div class="content-menu-item-wrap gallery-item">
+                    Gallery
+                    <br>
+                    <span>1562 photo / 15 categories</span>  
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <a href="#" class="text-center">
+                  <div class="content-menu-item-wrap forum-item">
+                    Forums
+                    <br>
+                    <span>1000 topics / 15 categories</span>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <a href="#" class="text-center">
+                  <div class="content-menu-item-wrap faq-item">
+                    FAQ
+                    <br>
+                    <span>200 questions / 5 categories</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div><!-- content-menu -->
+        </div>
+      </section>
+
       <section>
         <div class="content-list">
           <div class="menu-gallery">
@@ -148,7 +185,7 @@
                   <form class="form-inline">
                     <div class="form-group">
                       <img src="images/search-icon-gallery.png">
-                      <input type="text" class="form-control" placeholder="Search tags">
+                      <input type="text" id="category-search" class="form-control" placeholder="Search tags">
                     </div>
                   </form>
                 </div>
@@ -184,7 +221,7 @@
                     <div class="carousel-inner" role="listbox">
                       <div class="item active">
                         <div class="carousel-image-wrap">
-                          <img class="img-responsive" src="images/gallery-img-1.jpg" alt="">
+                          <div class="item-slide" style="background-image: url('../images/gallery-img-1.jpg')"></div>
                         </div>
                         <div class="carousel-caption">
                           <div class="gallery-item-description gallery-item-description-single">
@@ -214,7 +251,7 @@
 
                       <div class="item">
                         <div class="carousel-image-wrap">
-                          <img class="img-responsive" src="images/gallery-img-2.jpg" alt="">
+                          <div class="item-slide" style="background-image: url('../images/gallery-img-2.jpg')"></div>
                         </div>
                         <div class="carousel-caption">
                           <div class="gallery-item-description gallery-item-description-single">
@@ -222,6 +259,7 @@
                               <h2 class="hvr-underline-from-left">My sweet girl</h2>
                               <p>October 1, 2015 by 
                                 <a href="#"><u>Natalia</u></a>,
+                                <br class="visible-xs">
                                 <span class="amount-comments">8</span>Comments
                                 <span class="amount-likes">25</span>Likes
                               </p>
@@ -243,7 +281,7 @@
                       
                       <div class="item">
                         <div class="carousel-image-wrap">
-                          <img class="img-responsive" src="images/gallery-img-3.jpg" alt="">
+                          <div class="item-slide" style="background-image: url('../images/gallery-img-3.jpg')"></div>
                         </div>
                         <div class="carousel-caption">
                           <div class="gallery-item-description gallery-item-description-single">
@@ -274,7 +312,7 @@
 
                       <div class="item">
                         <div class="carousel-image-wrap">
-                          <img class="img-responsive" src="images/gallery-img-4.jpg" alt="">
+                          <div class="item-slide" style="background-image: url('../images/gallery-img-4.jpg')"></div>
                         </div>
                         <div class="carousel-caption">
                           <div class="gallery-item-description gallery-item-description-single">
@@ -304,7 +342,7 @@
 
                       <div class="item">
                         <div class="carousel-image-wrap">
-                          <img class="img-responsive" src="images/gallery-img-5.jpg" alt="">
+                          <div class="item-slide" style="background-image: url('../images/gallery-img-5.jpg')"></div>
                         </div>
                         <div class="carousel-caption">
                           <div class="gallery-item-description gallery-item-description-single">
@@ -388,6 +426,7 @@
                   <!-- END FOR REGISTERED USERS -->
                 </div>
               </div>
+              <a href="#" class="scrollup">Scroll</a>
             </div><!-- sticky-content -->
           </div>
         </div><!-- content-list -->
@@ -446,7 +485,7 @@
           <p class="copyright text-center push-reset"> &copy; 2015 selfcad.com  |  All rights reserved </p>
       </div>
       <!-- END MOBILE FOOTER -->
-    </div>ND MOBILE FOOTER -->
+    </div>
 
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
