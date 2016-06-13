@@ -24,7 +24,7 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div id="registration">
+    <div id="faq">
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <div class="container">
@@ -57,7 +57,7 @@
                   <a href="login.html" class="dropdown-toggle"><span class="login-icon"></span>Login</a>
                 </li>
                 <!-- FOR NOT REGISTERED USERS -->
-                
+
                 <!-- FOR REGISTERED USERS -->
 
                 <!-- <li class="dropdown">
@@ -114,9 +114,10 @@
       <section class="main-title-block">
         <div class="container">
           <h3 class="text-center">WELCOME TO SELFCAD COMMUNITY FORUMS</h3>
-          <br>
-          <h4 class="text-center">If you are new here, be sure to check our <a href="#">Community Rules</a>. You may need to <a href="registration.html">register</a> before 
+          <br class="rwd-break-none-mobile">
+          <h4 class="text-center">If you are new here, be sure to check our <a href="#">Community Rules</a>.<br class="rwd-break"> You may need to <a href="registration.html">register</a> before<br class="rwd-break"> 
           you can post anything.</h4>
+          
           <form class="form-inline">
             <div class="form-group">
               <img src="images/search-icon-big.png">
@@ -124,6 +125,7 @@
             </div>
             <button type="submit" class="btn btn-default">Search</button>
           </form>
+
         </div>
       </section><!-- main-title-block -->
       <section>
@@ -149,7 +151,7 @@
                 </a>
               </div>
               <div class="col-md-4 col-sm-4">
-                <a href="faq.html" class="text-center">
+                <a href="faq.html" class="text-center active">
                   <div class="content-menu-item-wrap faq-item">
                     FAQ
                     <br>
@@ -164,179 +166,164 @@
       <section>
         <div class="content-list">
           <div class="container">
-            <div class="center-block login-wrap">
-              <h3 class="title">Register Now</h3>
-              <br>
-              <!-- HTML form for validation demo -->
-              <form action="" method="post" id="register-form" novalidate="novalidate">
-                <div id="form-content">
-                  <fieldset>
-                    <div class="fieldgroup">
-                      <label for="displayname">Display Name <span>*</span></label>
-                      <div class="wrapped-input">
-                        <input class="styled-textarea" type="text" name="displayname">
-                        <div class="demo" id="labels2-3">
-                          <input type="checkbox" value="1" checked="checked">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fieldgroup">
-                      <label for="username">Username <span>*</span></label>
-                      <div class="wrapped-input">
-                        <input class="styled-textarea" type="text" name="username">
-                        <div class="demo" id="labels2-3">
-                          <input type="checkbox" value="1" checked="checked">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fieldgroup">
-                      <label for="password">Password <span>*</span></label>
-                      <div class="wrapped-input">
-                        <input class="styled-textarea" type="password" name="password">
-                        <div class="demo" id="labels2-3">
-                          <input type="checkbox" value="1" checked="checked">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fieldgroup">
-                      <label for="confirmpassword">Confirm Password <span>*</span></label>
-                      <input class="styled-textarea" type="password" name="confirmpassword">
-                    </div>
-                    <div class="fieldgroup">
-                      <label for="email">E-mail <span>*</span></label>
-                      <div class="wrapped-input">
-                        <input class="styled-textarea" type="text" name="email">
-                        <div class="demo" id="labels2-3">
-                          <input type="checkbox" value="1" checked="checked">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fieldgroup">
-                      <label for="confirmemail">Confirm E-mail <span>*</span></label>
-                      <input class="styled-textarea" type="text" name="confirmemail">
-                    </div>
-                    <h4>Personal Details</h4>
-                    <div class="fieldgroup">
-                      <label for="firstname">First Name <span>*</span></label>
-                      <div class="wrapped-input">
-                        <input class="styled-textarea" type="text" name="firstname">
-                        <div class="demo" id="labels2-3">
-                          <input type="checkbox" value="1" checked="checked">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fieldgroup">
-                      <label for="lastname">First Name <span>*</span></label>
-                      <div class="wrapped-input">
-                        <input class="styled-textarea" type="text" name="lastname">
-                        <div class="demo" id="labels2-3">
-                          <input type="checkbox" value="1" checked="checked">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fieldgroup">
-                      <label for="dateofbirth">Date of Birth <span>*</span></label>
-                      <div class="wrapped-input">
-                        <input class="styled-textarea" type="text" name="dateofbirth" placeholder="DD / MM / YY">
-                        <div class="demo" id="labels2-3">
-                          <input type="checkbox" value="1" checked="checked">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fieldgroup">
-                      <label for="city">City </label>
-                      <div class="wrapped-input">
-                        <input class="styled-textarea" type="text" name="city">
-                        <div class="demo" id="labels2-3">
-                          <input type="checkbox" value="1" checked="checked">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fieldgroup">
-                      <label for="country">Country </label>
-                      <div class="wrapped-input">
-                        <div id="contentWrap-country" class="styled-select">
-                          <select rv-value="truck.country_id">
-                            <option rv-each-country="country" rv-value="country.id">{ country.country_number }</option>
-                          </select>
-                        </div>
-                        <div class="demo" id="labels2-3">
-                          <input type="checkbox" value="1" checked="checked">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fieldgroup push-bottom-30">
-                      <label for="location">My Location </label>
-                      <div class="wrapped-input">
-                        <div class="map-wrap">
-                          <div id="map" class="map"></div>
-                          <div class="demo" id="labels2-3">
-                          <input type="checkbox" value="1" checked="checked">
-                        </div>
-                        </div>
-                        
-                      </div>
-                    </div>
-                    <div class="fieldgroup">         
-                      <label class="display-block" for="sex">Sex </label>
-                      <div class="radio">
-                        <input id="male" type="radio" name="sex" value="male"> 
-                        <label for="male">Male</label>
-                        <input id="female" type="radio" name="sex" value="female">
-                        <label for="female">Female</label>
-                      </div>
-                    </div>
-                    <div class="fieldgroup">         
-                      <label class="display-block" for="sex">Profile picture </label>
-                      <div class="input-group">
-                        <label class="input-group-btn">
-                          <span class="btn btn-primary">
-                            <i class="fa fa-arrow-up" aria-hidden="true"></i>
-                              Browse <input type="file" style="display: none" multiple="multiple">
-                          </span>
-                        </label>
-                        <input type="text" class="form-control" placeholder="Select file" readonly="readonly">
-                      </div>
-                    </div>
-                    <br>
-                    <div class="fieldgroup">         
-                      <label class="display-block" for="3Dprinter">Do you have 3D Printer? </label>
-                      <div class="radio">
-                        <input id="yes" type="radio" name="3d printer" value="yes"> 
-                        <label for="yes">Yes</label>
-                        <input id="no" type="radio" name="3d printer" value="no">
-                        <label for="no">No</label>
-                      </div>
-                    </div>
-                  </fieldset>
+
+            <!-- FOR REGISTERED USERS -->
+
+            <!-- <div class="main-menu">
+              <a class="btn btn-default" href="#" role="button">My topics</a>
+              <a class="btn btn-default" href="#" role="button">Featured</a>
+              <a class="btn btn-default star-icon" href="#" role="button">Favorites</a>
+              <a class="btn btn-default" href="#" role="button">Following</a>
+              <a class="btn btn-default" href="#" role="button">Gallery</a>
+            </div> -->
+
+            <!-- END FOR REGISTERED USERS -->
+            <div class="sort-question">
+              <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                  <h4 class="text-left push-top-reset">FAQ - Frequently Asked Questions</h4>
+                  <p>You can get the answer by selecting a category or using the search.</p>
                 </div>
-                <div class="signup-block">
-                  <input type="submit" value="Signup" class="submit">
-                  <br>
-                  <br>
-                  <div class="socials">
-                    <p class="text-center">Or Login with</p>
-                    <a class="btn" href="#" role="button">
-                      <img src="images/icon-social-selfcad.jpg">
-                      <span class="selfcad-btn hidden-xs">SelfCAD</span>
-                    </a>
-                    <a class="btn" href="#" role="button">
-                      <img src="images/icon-social-facebook.jpg">
-                      <span class="facebook-btn hidden-xs">Facebook</span>
-                    </a>
-                    <a class="btn" href="#" role="button">
-                      <img src="images/icon-social-twitter.jpg">
-                      <span class="twitter-btn hidden-xs">Twitter</span>
-                    </a>
-                    <a class="btn margin-r-reset" href="#" role="button">
-                      <img src="images/icon-social-linkedin.jpg">
-                      <span class="linkedin-btn hidden-xs">LinkedIn</span>
-                    </a>
-                  </div>
-                </div><!-- signup-block -->
-              </form><!-- #register-form -->
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                  <form>
+                    <input type="text" class="form-control" placeholder="Enter keywords for your search">
+                  </form>
+                </div>
+              </div>
+              <div class="divider"></div>
             </div>
-          </div> <!-- container -->
+            <div class="row">
+              <div class="col-md-4 col-sm-4">
+                <h4 class="text-center">Most popular questions</h4>
+                <a href="#" class="media">
+                  <div class="media-left">
+                    <img class="media-object" src="images/icon-forum-topic.png" alt="">
+                  </div>
+                  <div class="media-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
+                  </div>
+                </a>
+                <a href="#" class="media">
+                  <div class="media-left">
+                    <img class="media-object" src="images/icon-forum-topic.png" alt="">
+                  </div>
+                  <div class="media-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
+                  </div>
+                </a>
+                <a href="#" class="media">
+                  <div class="media-left">
+                    <img class="media-object" src="images/icon-forum-topic.png" alt="">
+                  </div>
+                  <div class="media-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
+                  </div>
+                </a>
+                <a href="#" class="media">
+                  <div class="media-left">
+                    <img class="media-object" src="images/icon-forum-topic.png" alt="">
+                  </div>
+                  <div class="media-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
+                  </div>
+                </a>
+                <a href="#" class="media">
+                  <div class="media-left">
+                    <img class="media-object" src="images/icon-forum-topic.png" alt="">
+                  </div>
+                  <div class="media-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <h4 class="text-center">Content</h4>
+                <a href="#" class="media">
+                  <div class="media-left">
+                    <img class="media-object" src="images/icon-forum-topic.png" alt="">
+                  </div>
+                  <div class="media-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
+                  </div>
+                </a>
+                <a href="#" class="media">
+                  <div class="media-left">
+                    <img class="media-object" src="images/icon-forum-topic.png" alt="">
+                  </div>
+                  <div class="media-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
+                  </div>
+                </a>
+                <a href="#" class="media">
+                  <div class="media-left">
+                    <img class="media-object" src="images/icon-forum-topic.png" alt="">
+                  </div>
+                  <div class="media-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
+                  </div>
+                </a>
+                <a href="#" class="media">
+                  <div class="media-left">
+                    <img class="media-object" src="images/icon-forum-topic.png" alt="">
+                  </div>
+                  <div class="media-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
+                  </div>
+                </a>
+                <a href="#" class="media">
+                  <div class="media-left">
+                    <img class="media-object" src="images/icon-forum-topic.png" alt="">
+                  </div>
+                  <div class="media-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <h4 class="text-center">3D Pprinting</h4>
+                <a href="#" class="media">
+                  <div class="media-left">
+                    <img class="media-object" src="images/icon-forum-topic.png" alt="">
+                  </div>
+                  <div class="media-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
+                  </div>
+                </a>
+                <a href="#" class="media">
+                  <div class="media-left">
+                    <img class="media-object" src="images/icon-forum-topic.png" alt="">
+                  </div>
+                  <div class="media-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
+                  </div>
+                </a>
+                <a href="#" class="media">
+                  <div class="media-left">
+                    <img class="media-object" src="images/icon-forum-topic.png" alt="">
+                  </div>
+                  <div class="media-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
+                  </div>
+                </a>
+                <a href="#" class="media">
+                  <div class="media-left">
+                    <img class="media-object" src="images/icon-forum-topic.png" alt="">
+                  </div>
+                  <div class="media-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
+                  </div>
+                </a>
+                <a href="#" class="media">
+                  <div class="media-left">
+                    <img class="media-object" src="images/icon-forum-topic.png" alt="">
+                  </div>
+                  <div class="media-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div><!-- content-list -->
       </section>
 
