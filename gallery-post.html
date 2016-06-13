@@ -167,31 +167,6 @@
 
       <section>
         <div class="content-list">
-          <div class="menu-gallery">
-            <div class="container">
-              <div class="button">
-                  <span class="btn-open"></span>
-              </div>
-              <div class="overlay">
-                <div class="wrap">
-                  <h3 class="">Categories</h3>
-                  <ul class="wrap-nav">
-                    <li><a class="hvr-underline-from-left" href="#">Latest</a></li>
-                    <li><a class="hvr-underline-from-left" href="#">Most Popular</a></li>
-                    <li><a class="hvr-underline-from-left" href="#">Most Discussed</a></li>
-                    <li><a class="hvr-underline-from-left" href="#">Printed</a></li>
-                    <li><a class="hvr-underline-from-left" href="#">Oldest</a></li>
-                  </ul>
-                  <form class="form-inline">
-                    <div class="form-group">
-                      <img src="images/search-icon-gallery.png">
-                      <input type="text" id="category-search" class="form-control" placeholder="Search tags">
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="container">
 
             <!-- FOR REGISTERED USERS -->
@@ -205,230 +180,253 @@
             </div> -->
 
             <!-- END FOR REGISTERED USERS -->
-            
-            <div class="sticky-content">
-              <div class="row">
-                <div class="col-md-12">
-                  <div id="carousel-example-generic" class="carousel slide push-bottom-30" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    </ol>
 
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                      <div class="item active">
-                        <div class="carousel-image-wrap">
-                          <div class="item-slide" style="background-image: url('../images/gallery-img-1.jpg')"></div>
-                        </div>
-                        <div class="carousel-caption">
-                          <div class="gallery-item-description gallery-item-description-single">
-                            <div class="gallery-item-description-single-wrap">
-                              <h2 class="hvr-underline-from-left">Something strange</h2>
-                              <p>October 1, 2015 by 
-                                <a href="#"><u>Natalia</u></a>,
-                                <span class="amount-comments">55</span>Comments
-                                <span class="amount-likes">300</span>Likes
-                              </p>
-                              <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Robot</a>
-                              <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Wild</a>
-                              <br><br>
-                              <p class="push-top-10">Category: <a href="#" class="hvr-underline-from-left">Most Popular</a></p>
-                            </div>
-                            <div class="divider push-top-20"></div>
-                            <p class="push-ends-30">My inspiration became robots since childhood. I started to try something new for yourself and understand that I have a passion 
-                            for robots. Then i start searching the best programm for easy modellind. And i found SelfCad.</p>
-                          </div>
-                        </div>
-                        <div class="socials">
-                          <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
-                          <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
-                          <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
+            <div class="sort-by push-bottom-30">
+              <form class="form-inline">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="pull-right">
+                      <div class="form-group push-right-10">
+                        <label for="Sort by">Sort by</label>
+                        <div id="gallery-sort">
+                          <select rv-value="truck.sort_id" class="btn-default"><span class="caret"></span>
+                            <option rv-each-sort="sort" rv-value="sort.id">{ sort.gallery_number }</option>
+                          </select>
                         </div>
                       </div>
-
-                      <div class="item">
-                        <div class="carousel-image-wrap">
-                          <div class="item-slide" style="background-image: url('../images/gallery-img-2.jpg')"></div>
-                        </div>
-                        <div class="carousel-caption">
-                          <div class="gallery-item-description gallery-item-description-single">
-                            <div class="gallery-item-description-single-wrap">
-                              <h2 class="hvr-underline-from-left">My sweet girl</h2>
-                              <p>October 1, 2015 by 
-                                <a href="#"><u>Natalia</u></a>,
-                                <br class="visible-xs">
-                                <span class="amount-comments">8</span>Comments
-                                <span class="amount-likes">25</span>Likes
-                              </p>
-                              <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">People</a>
-                              <br><br>
-                              <p class="push-top-10">Category: <a href="#" class="hvr-underline-from-left">Latest</a></p>
-                            </div>
-                            <div class="divider push-top-20"></div>
-                            <p class="push-ends-30">My inspiration became robots since childhood. I started to try something new for yourself and understand that I have a passion 
-                            for robots. Then i start searching the best programm for easy modellind. And i found SelfCad.</p>
-                          </div>
-                        </div>
-                        <div class="socials">
-                          <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
-                          <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
-                          <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
-                        </div>
+                      <div class="form-group">
+                        <img src="images/search-icon-gallery.png">
+                        <input type="text" class="form-control" placeholder="Search tags">
                       </div>
-                      
-                      <div class="item">
-                        <div class="carousel-image-wrap">
-                          <div class="item-slide" style="background-image: url('../images/gallery-img-3.jpg')"></div>
-                        </div>
-                        <div class="carousel-caption">
-                          <div class="gallery-item-description gallery-item-description-single">
-                            <div class="gallery-item-description-single-wrap">
-                              <h2 class="hvr-underline-from-left">Character for the  game</h2>
-                              <p>October 1, 2015 by 
-                                <a href="#"><u>Natalia</u></a>,
-                                <span class="amount-comments">55</span>Comments
-                                <span class="amount-likes">300</span>Likes
-                              </p>
-                              <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Girl</a>
-                              <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Character</a>
-                              <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Game</a>
-                              <br><br>
-                              <p class="push-top-10">Category: <a href="#" class="hvr-underline-from-left">Most Discussed</a></p>
-                            </div>
-                            <div class="divider push-top-20"></div>
-                            <p class="push-ends-30">My inspiration became robots since childhood. I started to try something new for yourself and understand that I have a passion 
-                            for robots. Then i start searching the best programm for easy modellind. And i found SelfCad.</p>
-                          </div>
-                        </div>
-                        <div class="socials">
-                          <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
-                          <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
-                          <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
-                        </div>
-                      </div>
-
-                      <div class="item">
-                        <div class="carousel-image-wrap">
-                          <div class="item-slide" style="background-image: url('../images/gallery-img-4.jpg')"></div>
-                        </div>
-                        <div class="carousel-caption">
-                          <div class="gallery-item-description gallery-item-description-single">
-                            <div class="gallery-item-description-single-wrap">
-                              <h2 class="hvr-underline-from-left">Simple hand</h2>
-                              <p>October 1, 2015 by 
-                                <a href="#"><u>Natalia</u></a>,
-                                <span class="amount-comments">8</span>Comments
-                                <span class="amount-likes">25</span>Likes
-                              </p>
-                              <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Peole</a>
-                              <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Hand</a>
-                              <br><br>
-                              <p class="push-top-10">Category: <a href="#" class="hvr-underline-from-left">Printed</a></p>
-                            </div>
-                            <div class="divider push-top-20"></div>
-                            <p class="push-ends-30">My inspiration became robots since childhood. I started to try something new for yourself and understand that I have a passion 
-                            for robots. Then i start searching the best programm for easy modellind. And i found SelfCad.</p>
-                          </div>
-                        </div>
-                        <div class="socials">
-                          <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
-                          <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
-                          <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
-                        </div>
-                      </div>
-
-                      <div class="item">
-                        <div class="carousel-image-wrap">
-                          <div class="item-slide" style="background-image: url('../images/gallery-img-5.jpg')"></div>
-                        </div>
-                        <div class="carousel-caption">
-                          <div class="gallery-item-description gallery-item-description-single">
-                            <div class="gallery-item-description-single-wrap">
-                              <h2 class="hvr-underline-from-left">Car</h2>
-                              <p>October 1, 2015 by 
-                                <a href="#"><u>Natalia</u></a>,
-                                <span class="amount-comments">55</span>Comments
-                                <span class="amount-likes">300</span>Likes
-                              </p>
-                              <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Car</a>
-                              <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Smart</a>
-                              <br><br>
-                              <p class="push-top-10">Category: <a href="#" class="hvr-underline-from-left">Category</a></p>
-                            </div>
-                            <div class="divider push-top-20"></div>
-                            <p class="push-ends-30">My inspiration became robots since childhood. I started to try something new for yourself and understand that I have a passion 
-                            for robots. Then i start searching the best programm for easy modellind. And i found SelfCad.</p>
-                          </div>
-                        </div>
-                        <div class="socials">
-                          <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
-                          <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
-                          <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
-                        </div>
-                      </div>
-
-                    </div><!-- carousel-inner -->
-
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                      <span class="carousel-left-arrow" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                      <span class="carousel-right-arrow" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div><!-- carousel -->
-                  <div class="media">
-                    <div class="media-left media-middle">
-                      <a href="#">
-                        <img class="media-object img-circle user-photo-circle" src="images/user-photo-circle.png" alt="">
-                      </a>
                     </div>
-                    <div class="media-body">
-                      <h3 class="push-top-reset"><i>Mary</i></h3>
-                      <span class="label label-default status">Status</span>
-                      <p class="push-top-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
-                      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                      modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                    </div>
-                  </div><!-- media -->
-                  <div class="divider"></div>
-                  <div class="media">
-                    <div class="media-left media-middle">
-                      <a href="#">
-                        <img class="media-object img-circle user-photo-circle" src="images/user-photo-circle.png" alt="">
-                      </a>
-                    </div>
-                    <div class="media-body">
-                      <h3 class="push-top-reset"><i>George</i></h3>
-                      <span class="label label-default status">Status</span>
-                      <p class="push-top-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
-                      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                      modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                    </div>
-                  </div><!-- media -->
-                  <div class="divider"></div>
-                  
-                  <!-- FOR NOT REGISTERED USERS -->
-                  <h3><i>You can’t leave comments. Please <a href="login.html">Login</a> or <a href="registration.html">Register</a></i></h3>
-                  <!-- END FOR NOT REGISTERED USERS -->
-
-                  <!-- FOR REGISTERED USERS -->
-                  <h3><i>Leave a Reply</i></h3>
-                  <form class="post-message">
-                    <textarea class="form-control" rows="6" placeholder="Message"></textarea>
-                    <button class="btn btn-default" type="submit">Post Comment</button>
-                  </form>
-                  <!-- END FOR REGISTERED USERS -->
+                  </div>
+                  <!-- <div class="col-md-6">
+                  </div> -->
                 </div>
+              </form>
+            </div><!-- Sort-by -->
+            
+            <div class="row">
+              <div class="col-md-12">
+                <div id="carousel-example-generic" class="carousel slide push-bottom-30" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                   <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <div class="carousel-image-wrap">
+                        <div class="item-slide" style="background-image: url('../images/gallery-img-1.jpg')"></div>
+                      </div>
+                      <div class="carousel-caption">
+                        <div class="gallery-item-description gallery-item-description-single">
+                          <div class="gallery-item-description-single-wrap">
+                            <h2><a href="gallety-post.html">Something strange</a></h2>
+                            <p>October 1, 2015 by 
+                              <a href="#"><u>Natalia</u></a>,
+                              <span class="amount-comments">55</span>Comments
+                              <span class="amount-likes">300</span>Likes
+                            </p>
+                            <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Robot</a>
+                            <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Wild</a>
+                            <br><br>
+                            <p class="push-top-10">Category: <a href="#">Most Popular</a></p>
+                          </div>
+                          <div class="divider push-top-20"></div>
+                          <p class="push-ends-30">My inspiration became robots since childhood. I started to try something new for yourself and understand that I have a passion 
+                          for robots. Then i start searching the best programm for easy modellind. And i found SelfCad.</p>
+                        </div>
+                      </div>
+                      <div class="socials">
+                        <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="carousel-image-wrap">
+                        <div class="item-slide" style="background-image: url('../images/gallery-img-2.jpg')"></div>
+                      </div>
+                      <div class="carousel-caption">
+                        <div class="gallery-item-description gallery-item-description-single">
+                          <div class="gallery-item-description-single-wrap">
+                            <h2><a href="gallety-post.html">My sweet girl</a></h2>
+                            <p>October 1, 2015 by 
+                              <a href="#"><u>Natalia</u></a>,
+                              <br class="visible-xs">
+                              <span class="amount-comments">8</span>Comments
+                              <span class="amount-likes">25</span>Likes
+                            </p>
+                            <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">People</a>
+                            <br><br>
+                            <p class="push-top-10">Category: <a href="#">Latest</a></p>
+                          </div>
+                          <div class="divider push-top-20"></div>
+                          <p class="push-ends-30">My inspiration became robots since childhood. I started to try something new for yourself and understand that I have a passion 
+                          for robots. Then i start searching the best programm for easy modellind. And i found SelfCad.</p>
+                        </div>
+                      </div>
+                      <div class="socials">
+                        <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
+                      </div>
+                    </div>
+                    
+                    <div class="item">
+                      <div class="carousel-image-wrap">
+                        <div class="item-slide" style="background-image: url('../images/gallery-img-3.jpg')"></div>
+                      </div>
+                      <div class="carousel-caption">
+                        <div class="gallery-item-description gallery-item-description-single">
+                          <div class="gallery-item-description-single-wrap">
+                            <h2><a href="gallety-post.html">Character for the  game</a></h2>
+                            <p>October 1, 2015 by 
+                              <a href="#"><u>Natalia</u></a>,
+                              <span class="amount-comments">55</span>Comments
+                              <span class="amount-likes">300</span>Likes
+                            </p>
+                            <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Girl</a>
+                            <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Character</a>
+                            <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Game</a>
+                            <br><br>
+                            <p class="push-top-10">Category: <a href="#">Most Discussed</a></p>
+                          </div>
+                          <div class="divider push-top-20"></div>
+                          <p class="push-ends-30">My inspiration became robots since childhood. I started to try something new for yourself and understand that I have a passion 
+                          for robots. Then i start searching the best programm for easy modellind. And i found SelfCad.</p>
+                        </div>
+                      </div>
+                      <div class="socials">
+                        <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="carousel-image-wrap">
+                        <div class="item-slide" style="background-image: url('../images/gallery-img-4.jpg')"></div>
+                      </div>
+                      <div class="carousel-caption">
+                        <div class="gallery-item-description gallery-item-description-single">
+                          <div class="gallery-item-description-single-wrap">
+                            <h2><a href="gallety-post.html">Simple hand</a></h2>
+                            <p>October 1, 2015 by 
+                              <a href="#"><u>Natalia</u></a>,
+                              <span class="amount-comments">8</span>Comments
+                              <span class="amount-likes">25</span>Likes
+                            </p>
+                            <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Peole</a>
+                            <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Hand</a>
+                            <br><br>
+                            <p class="push-top-10">Category: <a href="#">Printed</a></p>
+                          </div>
+                          <div class="divider push-top-20"></div>
+                          <p class="push-ends-30">My inspiration became robots since childhood. I started to try something new for yourself and understand that I have a passion 
+                          for robots. Then i start searching the best programm for easy modellind. And i found SelfCad.</p>
+                        </div>
+                      </div>
+                      <div class="socials">
+                        <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="carousel-image-wrap">
+                        <div class="item-slide" style="background-image: url('../images/gallery-img-5.jpg')"></div>
+                      </div>
+                      <div class="carousel-caption">
+                        <div class="gallery-item-description gallery-item-description-single">
+                          <div class="gallery-item-description-single-wrap">
+                            <h2><a href="gallety-post.html">Car</a></h2>
+                            <p>October 1, 2015 by 
+                              <a href="#"><u>Natalia</u></a>,
+                              <span class="amount-comments">55</span>Comments
+                              <span class="amount-likes">300</span>Likes
+                            </p>
+                            <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Car</a>
+                            <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Smart</a>
+                            <br><br>
+                            <p class="push-top-10">Category: <a href="#">Category</a></p>
+                          </div>
+                          <div class="divider push-top-20"></div>
+                          <p class="push-ends-30">My inspiration became robots since childhood. I started to try something new for yourself and understand that I have a passion 
+                          for robots. Then i start searching the best programm for easy modellind. And i found SelfCad.</p>
+                        </div>
+                      </div>
+                      <div class="socials">
+                        <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
+                      </div>
+                    </div>
+
+                  </div><!-- carousel-inner -->
+
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="carousel-left-arrow" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="carousel-right-arrow" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div><!-- carousel -->
+                <div class="media">
+                  <div class="media-left media-middle">
+                    <a href="#">
+                      <img class="media-object img-circle user-photo-circle" src="images/user-photo-circle.png" alt="">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h3 class="push-top-reset"><i>Mary</i></h3>
+                    <span class="label label-default status">Status</span>
+                    <p class="push-top-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                  </div>
+                </div><!-- media -->
+                <div class="divider"></div>
+                <div class="media">
+                  <div class="media-left media-middle">
+                    <a href="#">
+                      <img class="media-object img-circle user-photo-circle" src="images/user-photo-circle.png" alt="">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h3 class="push-top-reset"><i>George</i></h3>
+                    <span class="label label-default status">Status</span>
+                    <p class="push-top-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                  </div>
+                </div><!-- media -->
+                <div class="divider"></div>
+                
+                <!-- FOR NOT REGISTERED USERS -->
+                <h3><i>You can’t leave comments. Please <a href="login.html">Login</a> or <a href="registration.html">Register</a></i></h3>
+                <!-- END FOR NOT REGISTERED USERS -->
+
+                <!-- FOR REGISTERED USERS -->
+                <h3><i>Leave a Reply</i></h3>
+                <form class="post-message">
+                  <textarea class="form-control" rows="6" placeholder="Message"></textarea>
+                  <button class="btn btn-default" type="submit">Post Comment</button>
+                </form>
+                <!-- END FOR REGISTERED USERS -->
               </div>
-              <a href="#" class="scrollup">Scroll</a>
-            </div><!-- sticky-content -->
-          </div>
+            </div>
+            <a href="#" class="scrollup">Scroll</a>
+          </div> <!-- container -->
         </div><!-- content-list -->
       </section>
 
