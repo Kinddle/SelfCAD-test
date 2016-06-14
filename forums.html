@@ -24,7 +24,7 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div id="confirm-registration">
+    <div id="forums">
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <div class="container">
@@ -57,7 +57,7 @@
                   <a href="login.html" class="dropdown-toggle"><span class="login-icon"></span>Login</a>
                 </li>
                 <!-- FOR NOT REGISTERED USERS -->
-                
+
                 <!-- FOR REGISTERED USERS -->
 
                 <!-- <li class="dropdown">
@@ -114,9 +114,10 @@
       <section class="main-title-block">
         <div class="container">
           <h3 class="text-center">WELCOME TO SELFCAD COMMUNITY FORUMS</h3>
-          <br>
-          <h4 class="text-center">If you are new here, be sure to check our <a href="#">Community Rules</a>. You may need to <a href="registration.html">register</a> before 
+          <br class="rwd-break-none-mobile">
+          <h4 class="text-center">If you are new here, be sure to check our <a href="#">Community Rules</a>.<br class="rwd-break"> You may need to <a href="registration.html">register</a> before<br class="rwd-break"> 
           you can post anything.</h4>
+          
           <form class="form-inline">
             <div class="form-group">
               <img src="images/search-icon-big.png">
@@ -124,6 +125,7 @@
             </div>
             <button type="submit" class="btn btn-default">Search</button>
           </form>
+
         </div>
       </section><!-- main-title-block -->
       <section>
@@ -140,7 +142,7 @@
                 </a>
               </div>
               <div class="col-md-4 col-sm-4">
-                <a href="forums.html" class="text-center">
+                <a href="forums.html" class="text-center active">
                   <div class="content-menu-item-wrap forum-item">
                     Forums
                     <br>
@@ -164,24 +166,177 @@
       <section>
         <div class="content-list">
           <div class="container">
-            <div class="center-block login-wrap soft-ends-20">
-              <img src="images/logo-black-text.png">
-              <br>
-              <form>
-                <div class="signup-block">
-                  <button class="btn submit" type="submit"><span class="checked-icon"></span>E-mail sent. Don’t get it?</button>
+
+            <!-- FOR REGISTERED USERS -->
+
+            <!-- <div class="main-menu">
+              <a class="btn btn-default" href="#" role="button">My topics</a>
+              <a class="btn btn-default" href="#" role="button">Featured</a>
+              <a class="btn btn-default star-icon" href="#" role="button">Favorites</a>
+              <a class="btn btn-default" href="#" role="button">Following</a>
+              <a class="btn btn-default" href="#" role="button">Gallery</a>
+            </div> -->
+
+            <!-- END FOR REGISTERED USERS -->
+
+            <div class="row">
+              <div class="col-md-4 col-sm-12">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="topic-width">Main</th>
+                        <th class="category-width">Topics</th> 
+                        <th class="post-width text-center">Last post by</th>  
+                      </tr> 
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">Main Forum</a></td>
+                        <td class="posts-views">350</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">Tutorials</a></td>
+                        <td class="posts-views">25</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">Challenges</a></td>
+                        <td class="posts-views">1</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">Features Request</a></td>
+                        <td class="posts-views">80</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">3D Printing</a></td>
+                        <td class="posts-views">16</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-                <br>
-                <h3 class="text-center">We’ve sent you password to confirm registration</h3>
-                <br>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Please confirm password</label>
-                  <br>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <!-- Mobile-view -->
+                        <th class="topic-width visible-xs visible-sm">Support</th>
+                        <th class="category-width visible-xs visible-sm"></th> 
+                        <th class="post-width text-center visible-xs visible-sm"></th> 
+                        <!-- End Mobile-view -->
+
+                        <th class="topic-width hidden-xs hidden-sm">Support</th>
+                        <th class="category-width hidden-xs hidden-sm">Topics</th> 
+                        <th class="post-width text-center hidden-xs hidden-sm">Last post by</th>  
+                      </tr> 
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">Technical Problems</a></td>
+                        <td class="posts-views">350</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">General issues</a></td>
+                        <td class="posts-views">25</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">Payments</a></td>
+                        <td class="posts-views">1</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">Referrals</a></td>
+                        <td class="posts-views">80</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-              </form>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <!-- Mobile-view -->
+                        <th class="topic-width visible-xs visible-sm">Other</th>
+                        <th class="category-width visible-xs visible-sm"></th> 
+                        <th class="post-width text-center visible-xs visible-sm"></th> 
+                        <!-- End Mobile-view -->
+
+                        <th class="topic-width hidden-xs hidden-sm">Other</th>
+                        <th class="category-width hidden-xs hidden-sm">Topics</th> 
+                        <th class="post-width text-center hidden-xs hidden-sm">Last post by</th>  
+                      </tr> 
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">Miscellaneous</a></td>
+                        <td class="posts-views">350</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">Off-topic</a></td>
+                        <td class="posts-views">25</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">Challenges</a></td>
+                        <td class="posts-views">1</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">Features Request</a></td>
+                        <td class="posts-views">80</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">3D Printing</a></td>
+                        <td class="posts-views">16</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
-          </div> <!-- container -->
+          </div>
         </div><!-- content-list -->
       </section>
 
@@ -239,7 +394,6 @@
       </div>
       <!-- END MOBILE FOOTER -->
     </div>
-
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
