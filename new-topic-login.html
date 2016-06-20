@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8">
@@ -24,7 +23,7 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div id="new-topic">
+    <div id="login">
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <div class="container">
@@ -53,14 +52,14 @@
                   <a href="#" class="dropdown-toggle"><span class="logo-icon"></span>My SelfCAD</a>
                 </li>
                 <!-- FOR NOT REGISTERED USERS -->
-                <!-- <li>
+                <li>
                   <a href="login.html" class="dropdown-toggle active"><span class="login-icon"></span>Login</a>
-                </li> -->
+                </li>
                 <!-- FOR NOT REGISTERED USERS -->
                 
                 <!-- FOR REGISTERED USERS -->
 
-                <li class="dropdown">
+                <!-- <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     <span class="user-photo"></span>Natalia
                   </a>
@@ -68,7 +67,7 @@
                     <li><a href="#"><span class="profile-icon"></span>My Profile</a></li>
                     <li><a href="#"><span class="logout-icon"></span>LogOut</a></li>
                   </ul>
-                </li>
+                </li> -->
 
                 <!-- END FOR REGISTERED USERS -->
               </ul>
@@ -88,21 +87,18 @@
                 <li class="selfcad">
                   <a href="#"><span class="logo-icon"></span>My SelfCAD</a>
                 </li>
-                <!-- FOR NOT REGISTERED USERS -->
-                <!-- <li>
+                <li>
                   <a href="login.html"><span class="login-icon"></span>Login</a>
-                </li> -->
-                <!-- END FOR NOT REGISTERED USERS -->
-
+                </li>
                 <!-- FOR REGISTERED USERS -->
 
-                <li>
+                <!-- <li>
                   <a href="#">
                     <span class="user-photo"></span>Natalia
                   </a>
                 </li>
                 <li><a href="#"><span class="profile-icon"></span>My Profile</a></li>
-                <li><a href="#"><span class="logout-icon"></span>LogOut</a></li>
+                <li><a href="#"><span class="logout-icon"></span>LogOut</a></li> -->
 
                 <!-- END FOR REGISTERED USERS -->
               </ul>
@@ -170,19 +166,6 @@
       <section>
         <div class="content-list">
           <div class="container">
-            <!-- FOR REGISTERED USERS -->
-
-            <div class="main-menu">
-              <a class="btn btn-default" href="#" role="button">My topics</a>
-              <a class="btn btn-default" href="#" role="button">Featured</a>
-              <a class="btn btn-default star-icon" href="#" role="button">Favorites</a>
-              <a class="btn btn-default" href="#" role="button">Following</a>
-              <a class="btn btn-default" href="#" role="button">Gallery</a>
-            </div>
-
-            <p>New topics need to be approved by a moderator. It may take up to several hours for your post to 
-            become visible to other users. Add tags to your post to make it easier for others to find it. </p>
-
             <h3>New topic</h3>
             <ol class="breadcrumb">
               <li class="first-step"><a href="#">Forum</a></li>
@@ -190,82 +173,49 @@
               <li><a href="#">Payments</a></li>
               <li class="active">New topic</li>
             </ol>
-            
-            <div class="row">
-              <div class="col-md-12">
-                <form method="post" class="create-topic soft-bottom-20">
-                  <div class="panel panel-default">
-                    <div class="panel-body">
-                      <span>New topic</span>
-                    </div>
-                  </div>
-                  <div class="push-sides-20">
-                    <div class="row">
-                      <div class="col-md-3 col-sm-3 col-xs-6">
-                        <div class="form-group">
-                          <label for="select">Category</label>
-                          <div class="select-wrap">
-                            <select id="select" class="form-control">
-                              <option>Main forun</option>
-                              <option>Select</option>
-                              <option>Select 1</option>
-                              <option>Select 2</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-12 col-sm-12">
-                        <div class="form-group">
-                          <label for="description">Short description:</label>
-                          <textarea class="form-control" rows="1" placeholder=""></textarea>
-                        </div>
-                      </div>
-                    </div>
-                    <textarea id="text-editor">Hello, World!</textarea>
-                    <br>
-                    <div class="row">
-                      <div class="col-md-5 col-sm-4 col-xs-12">
-                        <div class="form-group">
-                          <label for="tags" class="show">Tags:</label>
-                          <input type="text" value="" data-role="tagsinput" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-7 col-sm-8 col-xs-12">
-                        <div class="pull-right">
-                        <div class="checkbox pull-left push-right-10">
-                          <label>
-                            <input type="checkbox" value="">
-                            Notify me about new comments
-                          </label>
-                        </div>
-                        <div class="form-group hidden-xs pull-left">
-                          <label for="notify via email"></label>
-                          <div class="select-wrap">
-                            <select id="select" class="form-control soft-right-20">
-                              <option>Notify via email</option>
-                              <option>Notify via email-1</option>
-                              <option>Notify via email-2</option>
-                              <option>Notify via email-3</option>
-                            </select>
-                          </div>
-                        </div>
-                        </div>
-                      </div>
-                    </div>
-                    <p class="push-bottom-30 text-left">Add up to 5 tags to make it easier for others to find your post</p>
-                    <div class="row">
-                      <div class="col-md-6 col-sm-6 col-xs-6">
-                        <input class="btn btn-default blue-btn" type="submit" value="Cansel">
-                      </div>
-                      <div class="col-md-6 col-sm-6 col-xs-6">
-                        <input class="btn btn-default blue-btn pull-right" type="submit" value="Post >>">
-                      </div>
-                    </div>
-                  </div>
-                </form>
+            <div class="center-block login-wrap">
+              <h4 class="title">LogIn</h4>
+              <p>You need to login in order to add a topic or post a comment</p>
+              <br>
+              <form class="login-form">
+                <div class="form-group">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                  <input type="name" class="form-control" id="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                  <i class="fa fa-lock" aria-hidden="true"></i>
+                  <input type="password" class="form-control" id="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
+                  <button type="submit" class="btn btn-default">Forget</button>
+                </div>
+                <button type="submit" class="btn btn-default login-btn">Log in</button>
+                <div class="checkbox">
+                  <input type="checkbox" id="test1">
+                  <label for="test1">Remember me</label>
+                  <a href="registration.html" class="pull-right">Register</a>
+                </div>
+              </form>
+              <div class="socials">
+                <div class="row">
+                  <p class="text-center">Or Login with</p>
+                  <a class="btn col-md-3 col-sm-3" href="#" role="button">
+                    <img src="images/icon-social-selfcad.jpg">
+                    <span class="selfcad-btn hidden-xs">SelfCAD</span>
+                  </a>
+                  <a class="btn col-md-3 col-sm-3" href="#" role="button">
+                    <img src="images/icon-social-facebook.jpg">
+                    <span class="facebook-btn hidden-xs">Facebook</span>
+                  </a>
+                  <a class="btn col-md-3 col-sm-3" href="#" role="button">
+                    <img src="images/icon-social-twitter.jpg">
+                    <span class="twitter-btn hidden-xs">Twitter</span>
+                  </a>
+                  <a class="btn col-md-3 col-sm-3" href="#" role="button">
+                    <img src="images/icon-social-linkedin.jpg">
+                    <span class="linkedin-btn hidden-xs">LinkedIn</span>
+                  </a>
+                </div>
               </div>
-            </div><!-- row -->
-      
+            </div>
           </div> <!-- container -->
         </div><!-- content-list -->
       </section>
@@ -344,4 +294,4 @@
     
     <script src="scripts/main.js"></script>
   </body>
-</html> -->
+</html>

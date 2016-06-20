@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8">
@@ -13,8 +12,6 @@
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="styles/vendor.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="styles/main.css">
     
@@ -24,7 +21,7 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div id="new-topic">
+    <div id="registration">
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <div class="container">
@@ -53,14 +50,14 @@
                   <a href="#" class="dropdown-toggle"><span class="logo-icon"></span>My SelfCAD</a>
                 </li>
                 <!-- FOR NOT REGISTERED USERS -->
-                <!-- <li>
-                  <a href="login.html" class="dropdown-toggle active"><span class="login-icon"></span>Login</a>
-                </li> -->
+                <li>
+                  <a href="login.html" class="dropdown-toggle"><span class="login-icon"></span>Login</a>
+                </li>
                 <!-- FOR NOT REGISTERED USERS -->
                 
                 <!-- FOR REGISTERED USERS -->
 
-                <li class="dropdown">
+                <!-- <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     <span class="user-photo"></span>Natalia
                   </a>
@@ -68,7 +65,7 @@
                     <li><a href="#"><span class="profile-icon"></span>My Profile</a></li>
                     <li><a href="#"><span class="logout-icon"></span>LogOut</a></li>
                   </ul>
-                </li>
+                </li> -->
 
                 <!-- END FOR REGISTERED USERS -->
               </ul>
@@ -88,21 +85,18 @@
                 <li class="selfcad">
                   <a href="#"><span class="logo-icon"></span>My SelfCAD</a>
                 </li>
-                <!-- FOR NOT REGISTERED USERS -->
-                <!-- <li>
+                <li>
                   <a href="login.html"><span class="login-icon"></span>Login</a>
-                </li> -->
-                <!-- END FOR NOT REGISTERED USERS -->
-
+                </li>
                 <!-- FOR REGISTERED USERS -->
 
-                <li>
+                <!-- <li>
                   <a href="#">
                     <span class="user-photo"></span>Natalia
                   </a>
                 </li>
                 <li><a href="#"><span class="profile-icon"></span>My Profile</a></li>
-                <li><a href="#"><span class="logout-icon"></span>LogOut</a></li>
+                <li><a href="#"><span class="logout-icon"></span>LogOut</a></li> -->
 
                 <!-- END FOR REGISTERED USERS -->
               </ul>
@@ -117,8 +111,8 @@
       <section class="main-title-block">
         <div class="container">
           <h3 class="text-center">WELCOME TO SELFCAD COMMUNITY FORUMS</h3>
-          <br class="rwd-break-none-mobile">
-          <h4 class="text-center">If you are new here, be sure to check our <a href="#">Community Rules</a>.<br class="rwd-break"> You may need to <a href="registration.html">register</a> before<br class="rwd-break"> 
+          <br>
+          <h4 class="text-center">If you are new here, be sure to check our <a href="#">Community Rules</a>. You may need to <a href="registration.html">register</a> before 
           you can post anything.</h4>
           <form class="form-inline">
             <div class="form-group">
@@ -170,102 +164,180 @@
       <section>
         <div class="content-list">
           <div class="container">
-            <!-- FOR REGISTERED USERS -->
-
-            <div class="main-menu">
-              <a class="btn btn-default" href="#" role="button">My topics</a>
-              <a class="btn btn-default" href="#" role="button">Featured</a>
-              <a class="btn btn-default star-icon" href="#" role="button">Favorites</a>
-              <a class="btn btn-default" href="#" role="button">Following</a>
-              <a class="btn btn-default" href="#" role="button">Gallery</a>
-            </div>
-
-            <p>New topics need to be approved by a moderator. It may take up to several hours for your post to 
-            become visible to other users. Add tags to your post to make it easier for others to find it. </p>
-
-            <h3>New topic</h3>
-            <ol class="breadcrumb">
-              <li class="first-step"><a href="#">Forum</a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Payments</a></li>
-              <li class="active">New topic</li>
-            </ol>
-            
-            <div class="row">
-              <div class="col-md-12">
-                <form method="post" class="create-topic soft-bottom-20">
-                  <div class="panel panel-default">
-                    <div class="panel-body">
-                      <span>New topic</span>
-                    </div>
-                  </div>
-                  <div class="push-sides-20">
-                    <div class="row">
-                      <div class="col-md-3 col-sm-3 col-xs-6">
-                        <div class="form-group">
-                          <label for="select">Category</label>
-                          <div class="select-wrap">
-                            <select id="select" class="form-control">
-                              <option>Main forun</option>
-                              <option>Select</option>
-                              <option>Select 1</option>
-                              <option>Select 2</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-12 col-sm-12">
-                        <div class="form-group">
-                          <label for="description">Short description:</label>
-                          <textarea class="form-control" rows="1" placeholder=""></textarea>
+            <div class="center-block login-wrap">
+              <h3 class="title">Register Now</h3>
+              <br>
+              <!-- HTML form for validation demo -->
+              <form action="" method="post" id="register-form" novalidate="novalidate">
+                <div id="form-content">
+                  <fieldset>
+                    <div class="fieldgroup">
+                      <label for="displayname">Display Name <span>*</span></label>
+                      <div class="wrapped-input">
+                        <input class="styled-textarea" type="text" name="displayname">
+                        <div class="demo" id="labels2-3">
+                          <input type="checkbox" value="1" checked="checked">
                         </div>
                       </div>
                     </div>
-                    <textarea id="text-editor">Hello, World!</textarea>
+                    <div class="fieldgroup">
+                      <label for="username">Username <span>*</span></label>
+                      <div class="wrapped-input">
+                        <input class="styled-textarea" type="text" name="username">
+                        <div class="demo" id="labels2-3">
+                          <input type="checkbox" value="1" checked="checked">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="fieldgroup">
+                      <label for="password">Password <span>*</span></label>
+                      <div class="wrapped-input">
+                        <input class="styled-textarea" type="password" name="password">
+                        <div class="demo" id="labels2-3">
+                          <input type="checkbox" value="1" checked="checked">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="fieldgroup">
+                      <label for="confirmpassword">Confirm Password <span>*</span></label>
+                      <input class="styled-textarea" type="password" name="confirmpassword">
+                    </div>
+                    <div class="fieldgroup">
+                      <label for="email">E-mail <span>*</span></label>
+                      <div class="wrapped-input">
+                        <input class="styled-textarea" type="text" name="email">
+                        <div class="demo" id="labels2-3">
+                          <input type="checkbox" value="1" checked="checked">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="fieldgroup">
+                      <label for="confirmemail">Confirm E-mail <span>*</span></label>
+                      <input class="styled-textarea" type="text" name="confirmemail">
+                    </div>
+                    <h4>Personal Details</h4>
+                    <div class="fieldgroup">
+                      <label for="firstname">First Name <span>*</span></label>
+                      <div class="wrapped-input">
+                        <input class="styled-textarea" type="text" name="firstname">
+                        <div class="demo" id="labels2-3">
+                          <input type="checkbox" value="1" checked="checked">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="fieldgroup">
+                      <label for="lastname">First Name <span>*</span></label>
+                      <div class="wrapped-input">
+                        <input class="styled-textarea" type="text" name="lastname">
+                        <div class="demo" id="labels2-3">
+                          <input type="checkbox" value="1" checked="checked">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="fieldgroup">
+                      <label for="dateofbirth">Date of Birth <span>*</span></label>
+                      <div class="wrapped-input">
+                        <input class="styled-textarea" type="text" name="dateofbirth" placeholder="DD / MM / YY">
+                        <div class="demo" id="labels2-3">
+                          <input type="checkbox" value="1" checked="checked">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="fieldgroup">
+                      <label for="city">City </label>
+                      <div class="wrapped-input">
+                        <input class="styled-textarea" type="text" name="city">
+                        <div class="demo" id="labels2-3">
+                          <input type="checkbox" value="1" checked="checked">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="fieldgroup">
+                      <label for="country">Country </label>
+                      <div class="wrapped-input">
+                        <div id="contentWrap-country" class="styled-select">
+                          <select rv-value="truck.country_id">
+                            <option rv-each-country="country" rv-value="country.id">{ country.country_number }</option>
+                          </select>
+                        </div>
+                        <div class="demo" id="labels2-3">
+                          <input type="checkbox" value="1" checked="checked">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="fieldgroup push-bottom-30">
+                      <label for="location">My Location </label>
+                      <div class="wrapped-input">
+                        <div class="map-wrap">
+                          <div id="map" class="map"></div>
+                          <div class="demo" id="labels2-3">
+                          <input type="checkbox" value="1" checked="checked">
+                        </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="fieldgroup">         
+                      <label class="display-block" for="sex">Sex </label>
+                      <div class="radio">
+                        <input id="male" type="radio" name="sex" value="male"> 
+                        <label for="male">Male</label>
+                        <input id="female" type="radio" name="sex" value="female">
+                        <label for="female">Female</label>
+                      </div>
+                    </div>
+                    <div class="fieldgroup">         
+                      <label class="display-block" for="sex">Profile picture </label>
+                      <div class="input-group">
+                        <label class="input-group-btn">
+                          <span class="btn btn-primary">
+                            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                              Browse <input type="file" style="display: none" multiple="multiple">
+                          </span>
+                        </label>
+                        <input type="text" class="form-control" placeholder="Select file" readonly="readonly">
+                      </div>
+                    </div>
                     <br>
-                    <div class="row">
-                      <div class="col-md-5 col-sm-4 col-xs-12">
-                        <div class="form-group">
-                          <label for="tags" class="show">Tags:</label>
-                          <input type="text" value="" data-role="tagsinput" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-7 col-sm-8 col-xs-12">
-                        <div class="pull-right">
-                        <div class="checkbox pull-left push-right-10">
-                          <label>
-                            <input type="checkbox" value="">
-                            Notify me about new comments
-                          </label>
-                        </div>
-                        <div class="form-group hidden-xs pull-left">
-                          <label for="notify via email"></label>
-                          <div class="select-wrap">
-                            <select id="select" class="form-control soft-right-20">
-                              <option>Notify via email</option>
-                              <option>Notify via email-1</option>
-                              <option>Notify via email-2</option>
-                              <option>Notify via email-3</option>
-                            </select>
-                          </div>
-                        </div>
-                        </div>
+                    <div class="fieldgroup">         
+                      <label class="display-block" for="3Dprinter">Do you have 3D Printer? </label>
+                      <div class="radio">
+                        <input id="yes" type="radio" name="3d printer" value="yes"> 
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="3d printer" value="no">
+                        <label for="no">No</label>
                       </div>
                     </div>
-                    <p class="push-bottom-30 text-left">Add up to 5 tags to make it easier for others to find your post</p>
+                  </fieldset>
+                </div>
+                <div class="signup-block">
+                  <input type="submit" value="Signup" class="submit">
+                  <br>
+                  <br>
+                  <div class="socials">
                     <div class="row">
-                      <div class="col-md-6 col-sm-6 col-xs-6">
-                        <input class="btn btn-default blue-btn" type="submit" value="Cansel">
-                      </div>
-                      <div class="col-md-6 col-sm-6 col-xs-6">
-                        <input class="btn btn-default blue-btn pull-right" type="submit" value="Post >>">
-                      </div>
+                      <p class="text-center">Or Login with</p>
+                      <a class="btn col-md-3 col-sm-3" href="#" role="button">
+                        <img src="images/icon-social-selfcad.jpg">
+                        <span class="selfcad-btn hidden-xs">SelfCAD</span>
+                      </a>
+                      <a class="btn col-md-3 col-sm-3" href="#" role="button">
+                        <img src="images/icon-social-facebook.jpg">
+                        <span class="facebook-btn hidden-xs">Facebook</span>
+                      </a>
+                      <a class="btn col-md-3 col-sm-3" href="#" role="button">
+                        <img src="images/icon-social-twitter.jpg">
+                        <span class="twitter-btn hidden-xs">Twitter</span>
+                      </a>
+                      <a class="btn col-md-3 col-sm-3" href="#" role="button">
+                        <img src="images/icon-social-linkedin.jpg">
+                        <span class="linkedin-btn hidden-xs">LinkedIn</span>
+                      </a>
                     </div>
                   </div>
-                </form>
-              </div>
-            </div><!-- row -->
-      
+                </div><!-- signup-block -->
+              </form><!-- #register-form -->
+            </div>
           </div> <!-- container -->
         </div><!-- content-list -->
       </section>
@@ -324,7 +396,6 @@
       </div>
       <!-- END MOBILE FOOTER -->
     </div>
-
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -341,7 +412,8 @@
     <script src="scripts/vendor.js"></script>
     
     <script src="scripts/plugins.js"></script>
+    <!--<script src='http://cdn.tinymce.com/4/tinymce.min.js'></script>-->
     
     <script src="scripts/main.js"></script>
   </body>
-</html> -->
+</html>

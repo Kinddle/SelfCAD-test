@@ -1,0 +1,945 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SelfCAD</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,300" rel="stylesheet" type="text/css">
+
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="styles/vendor.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <script src="scripts/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="gallery">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="index.html"><img class="logo" src="images/logo-big.png"></a> 
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav hidden-xs desktop-navbar">
+                <li class="dropdown">
+                  <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="home-icon"></span>Home</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="all-topics.html"><span class="all-topics-icon"></span>All Topics</a></li>
+                    <li><a href="all-users.html"><span class="all-users-icon"></span>All Users</a></li>
+                  </ul>
+                </li>
+                <li class="selfcad">
+                  <a href="#" class="dropdown-toggle"><span class="logo-icon"></span>My SelfCAD</a>
+                </li>
+                <!-- FOR NOT REGISTERED USERS -->
+                <li>
+                  <a href="login.html" class="dropdown-toggle"><span class="login-icon"></span>Login</a>
+                </li>
+                <!-- FOR NOT REGISTERED USERS -->
+
+                <!-- FOR REGISTERED USERS -->
+
+                <!-- <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="user-photo"></span>Natalia
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#"><span class="profile-icon"></span>My Profile</a></li>
+                    <li><a href="#"><span class="logout-icon"></span>LogOut</a></li>
+                  </ul>
+                </li> -->
+
+                <!-- END FOR REGISTERED USERS -->
+              </ul>
+
+              <!-- MOBILE NAVBAR -->
+
+              <ul class="nav navbar-nav mobile-navbar hidden-lg hidden-md hidden-sm">
+                <li>
+                  <a href="index.html"><span class="home-icon"></span>Home</a>
+                </li>
+                <li>
+                  <a href="all-topics.html"><span class="all-topics-icon"></span>All Topics</a>
+                </li>
+                <li>
+                  <a href="all-users.html"><span class="all-users-icon"></span>All Users</a>
+                </li>
+                <li class="selfcad">
+                  <a href="#"><span class="logo-icon"></span>My SelfCAD</a>
+                </li>
+                <li>
+                  <a href="login.html"><span class="login-icon"></span>Login</a>
+                </li>
+                <!-- FOR REGISTERED USERS -->
+
+                <!-- <li>
+                  <a href="#">
+                    <span class="user-photo"></span>Natalia
+                  </a>
+                </li>
+                <li><a href="#"><span class="profile-icon"></span>My Profile</a></li>
+                <li><a href="#"><span class="logout-icon"></span>LogOut</a></li> -->
+
+                <!-- END FOR REGISTERED USERS -->
+              </ul>
+
+              <!-- MOBILE NAVBAR -->
+
+            </div><!-- /.navbar-collapse -->
+          </div>
+        </div><!-- /.container-fluid -->
+      </nav>
+      
+      <section class="main-title-block">
+        <div class="container">
+          <h3 class="text-center">WELCOME TO SELFCAD COMMUNITY FORUMS</h3>
+          <br class="rwd-break-none-mobile">
+          <h4 class="text-center">If you are new here, be sure to check our <a href="#">Community Rules</a>.<br class="rwd-break"> You may need to <a href="registration.html">register</a> before<br class="rwd-break"> 
+          you can post anything.</h4>
+          
+          <form class="form-inline">
+            <div class="form-group">
+              <img src="images/search-icon-big.png">
+              <input type="text" class="form-control" placeholder="What do you want to read about?">
+            </div>
+            <button type="submit" class="btn btn-default">Search</button>
+          </form>
+
+        </div>
+      </section><!-- main-title-block -->
+      <section>
+        <div class="container">
+          <div class="content-menu">
+            <div class="row">
+              <div class="col-md-4 col-sm-4">
+                <a href="gallery.html" class="text-center">
+                  <div class="content-menu-item-wrap">
+                    <div class="gallery-item"></div>
+                    Gallery
+                    <br>
+                    <span>1562 photo / 15 categories</span>  
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <a href="forums.html" class="text-center">
+                  <div class="content-menu-item-wrap">
+                    <div class="forum-item"></div>
+                    Forums
+                    <br>
+                    <span>1000 topics / 15 categories</span>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <a href="faq.html" class="text-center">
+                  <div class="content-menu-item-wrap">
+                    <div class="faq-item"></div>
+                    FAQ
+                    <br>
+                    <span>200 questions / 5 categories</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div><!-- content-menu -->
+        </div>
+      </section>
+      <section>
+        <div class="content-list">
+          <div class="container">
+
+            <!-- FOR REGISTERED USERS -->
+
+            <!-- <div class="main-menu">
+              <a class="btn btn-default" href="#" role="button">My topics</a>
+              <a class="btn btn-default" href="#" role="button">Featured</a>
+              <a class="btn btn-default star-icon" href="#" role="button">Favorites</a>
+              <a class="btn btn-default" href="#" role="button">Following</a>
+              <a class="btn btn-default" href="#" role="button">Gallery</a>
+            </div> -->
+
+            <!-- END FOR REGISTERED USERS -->
+            
+            <div class="sort-by push-bottom-30">
+              <form class="form-inline">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="pull-right">
+                      <div class="form-group push-right-10">
+                        <label for="Sort by">Sort by</label>
+                        <div id="gallery-sort">
+                          <select rv-value="truck.sort_id" class="btn-default"><span class="caret"></span>
+                            <option rv-each-sort="sort" rv-value="sort.id">{ sort.gallery_number }</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <img src="images/search-icon-gallery.png">
+                        <input type="text" class="form-control" placeholder="Search tags">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="col-md-6">
+                  </div> -->
+                </div>
+              </form>
+
+            </div><!-- Sort-by -->
+            
+            <!-- gallery-block landscape-left -->
+           <!--  SLIDER IF USER HAVE MORE THEN ONE PHOTO -->
+            <div class="gallery-block hidden-xs">       
+              <div class="gallery-block-content-wrap landscape-left">
+                <div class="row">
+                  <div class="col-md-4 col-sm-4">
+                    <div class="vertical-align-wrap">
+                      <div class="image-section">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                          <!-- Indicators -->
+                          <!-- <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                          </ol> -->
+
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                              <div class="item-slide" style="background-image: url('../images/gallery-img-1.jpg')"></div>
+                            </div>
+                            <div class="item">
+                              <div class="item-slide" style="background-image: url('../images/gallery-img-2.jpg')"></div>
+                            </div>
+                            <div class="item">
+                              <div class="item-slide" style="background-image: url('../images/gallery-img-3.jpg')"></div>
+                            </div>
+                            <div class="item">
+                              <div class="item-slide" style="background-image: url('../images/gallery-img-4.jpg')"></div>
+                            </div>
+                            <div class="item">
+                              <div class="item-slide" style="background-image: url('../images/gallery-img-5.jpg')"></div>
+                            </div>
+                          </div>
+
+                          <!-- Controls -->
+                          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="carousel-left-arrow" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="carousel-right-arrow" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-sm-8">
+                    <div class="gallery-item-description">
+                      <h2><a href="gallety-post.html">Something strange</a></h2>
+                      <p>October 1, 2015 by 
+                        <a href="#"><u>Natalia</u></a>,
+                        <span class="amount-comments">55</span>Comments
+                        <span class="amount-likes">300</span>Likes
+                      </p>
+                      <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Robot</a>
+                      <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Wild</a>
+                      <br><br>
+                      <p class="text-gradient">My inspiration became robots since childhood. 
+                        I started to try something new for yourself and 
+                        understand that I have a passion for robots.
+                        Then i start searching the best programm for
+                        easy modellind. And i found SelfCad.
+                      </p>
+                      <div class="socials">
+                        <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
+                      </div>
+                      <a class="btn btn-default pull-right" href="gallery-post.html" role="button">Read more</a>
+                      <div class="divider push-top-20"></div>
+                      <p class="push-top-10">Category: <a href="#">Most Popular</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+           <!-- END SLIDER IF USER HAVE MORE THEN ONE PHOTO -->
+            
+      <!-- IF USER HAVE ONE PHOTO -->
+
+              <!-- <div class="gallery-block hidden-xs">       
+                <div class="gallery-block-content-wrap landscape-left">
+                  <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                      <div class="vertical-align-wrap">
+                        <div class="hover-effect image-section">
+                          <figure class="effect-layla">
+                            <img src="images/gallery-img-1.jpg" alt="" class="img-responsive"/>
+                            <figcaption>
+                              <p class="text-center resize-btn"><span>View</span></p>
+                              <a href="gallery-post.html">View</a>
+                            </figcaption>     
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-8 col-sm-8">
+                      <div class="gallery-item-description">
+                        <h2><a href="gallety-post.html">Something strange</a></h2>
+                        <p>October 1, 2015 by 
+                          <a href="#"><u>Natalia</u></a>,
+                          <span class="amount-comments">55</span>Comments
+                          <span class="amount-likes">300</span>Likes
+                        </p>
+                        <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Robot</a>
+                        <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Wild</a>
+                        <br><br>
+                        <p class="text-gradient">My inspiration became robots since childhood. 
+                          I started to try something new for yourself and 
+                          understand that I have a passion for robots.
+                          Then i start searching the best programm for
+                          easy modellind. And i found SelfCad.
+                        </p>
+                        <div class="socials">
+                          <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
+                          <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
+                          <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
+                        </div>
+                        <a class="btn btn-default pull-right" href="gallery-post.html" role="button">Read more</a>
+                        <div class="divider push-top-20"></div>
+                        <p class="push-top-10">Category: <a href="#">Most Popular</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
+
+              <!-- gallery-block landscape-right -->
+              <!-- <div class="gallery-block hidden-xs">       
+                <div class="gallery-block-content-wrap landscape-right">
+                  <div class="row">
+                    <div class="col-md-8 col-sm-8">
+                      <div class="gallery-item-description">
+                        <h2><a href="gallety-post.html">Something strange</a></h2>
+                        <p>October 1, 2015 by 
+                          <a href="#"><u>Natalia</u></a>,
+                          <span class="amount-comments">55</span>Comments
+                          <span class="amount-likes">300</span>Likes
+                        </p>
+                        <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Robot</a>
+                        <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Wild</a>
+                        <br><br>
+                        <p class="text-gradient">My inspiration became robots since childhood. 
+                          I started to try something new for yourself and 
+                          understand that I have a passion for robots.
+                          Then i start searching the best programm for
+                          easy modellind. And i found SelfCad.
+                        </p>
+                        <div class="socials">
+                          <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
+                          <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
+                          <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
+                        </div>
+                        <a class="btn btn-default pull-right" href="gallery-post.html" role="button">Read more</a>
+                        <div class="divider push-top-20"></div>
+                        <p class="push-top-10">Category: <a href="#">Most Popular</a></p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                      <div class="vertical-align-wrap">
+                        <div class="hover-effect image-section">
+                          <figure class="effect-layla">
+                            <img src="images/gallery-img-1.jpg" alt="" class="img-responsive"/>
+                            <figcaption>
+                              <p class="text-center resize-btn"><span>View</span></p>
+                              <a href="gallery-post.html">View</a>
+                            </figcaption>     
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
+              <!-- gallery-block portrait-right -->
+            <div class="gallery-block hidden-xs">
+              <div class="gallery-block-content-wrap portrait-right">
+                <div class="row">
+                  <div class="col-md-9 col-sm-9">
+                    <div class="gallery-item-description">
+                      <h2><a href="gallety-post.html">My sweet girl</a></h2>
+                      <p>October 1, 2015 by 
+                        <a href="#"><u>Natalia</u></a>,
+                        <span class="amount-comments">8</span>Comments
+                        <span class="amount-likes">25</span>Likes
+                      </p>
+                      <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">People</a>
+                      <br><br>
+                      <p class="text-gradient">My inspiration became robots since childhood. 
+                        I started to try something new for yourself and 
+                        understand that I have a passion for robots.
+                        Then i start searching the best programm for
+                        easy modellind. And i found SelfCad.
+                      </p>
+                      <div class="socials">
+                        <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
+                      </div>
+                      <a class="btn btn-default pull-right" href="gallery-post.html" role="button">Read more</a>
+                      <div class="divider push-top-20"></div>
+                      <p class="push-top-10">Category: <a href="#">Latest</a></p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-3">
+                    <div class="vertical-align-wrap">
+                      <div class="hover-effect image-section">
+                        <figure class="effect-layla">
+                          <img src="images/gallery-img-2.jpg" alt="" class="img-responsive">
+                          <figcaption>
+                            <p class="text-center resize-btn"><span>View</span></p>
+                            <a href="gallery-post.html">View</a>
+                          </figcaption>     
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- gallery-block-content-wrap portrait -->
+            </div><!-- gallery-block -->
+
+            <!-- gallery-block landscape-left -->
+            <div class="gallery-block hidden-xs">       
+              <div class="gallery-block-content-wrap landscape-left">
+                <div class="row">
+                  <div class="col-md-4 col-sm-4">
+                    <div class="vertical-align-wrap">
+                      <div class="hover-effect image-section">
+                        <figure class="effect-layla">
+                          <img src="images/gallery-img-3.jpg" alt="" class="img-responsive">
+                          <figcaption>
+                            <p class="text-center resize-btn"><span>View</span></p>
+                            <a href="gallery-post.html">View</a>
+                          </figcaption>     
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-sm-8">
+                    <div class="gallery-item-description">
+                      <h2><a href="gallety-post.html">Character for the  game</a></h2>
+                      <p>October 1, 2015 by 
+                        <a href="#"><u>Natalia</u></a>,
+                        <span class="amount-comments">55</span>Comments
+                        <span class="amount-likes">300</span>Likes
+                      </p>
+                      <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Girl</a>
+                      <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Character</a>
+                      <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Game</a>
+                      <br><br>
+                      <p class="text-gradient">This is new project
+                      </p>
+                      <div class="socials">
+                        <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
+                      </div>
+                      <a class="btn btn-default pull-right" href="gallery-post.html" role="button">Read more</a>
+                      <div class="divider push-top-20"></div>
+                      <p class="push-top-10">Category: <a href="#">Most Discussed</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- gallery-block-content-wrap landscape-left -->
+            </div><!-- gallery-block -->
+
+            <div class="gallery-block hidden-xs">
+              <div class="gallery-block-content-wrap portrait-right">
+                <div class="row">
+                  <div class="col-md-9 col-sm-9">
+                    <div class="gallery-item-description">
+                      <h2><a href="gallety-post.html">Simple hand</a></h2>
+                      <p>October 1, 2015 by 
+                        <a href="#"><u>Natalia</u></a>,
+                        <span class="amount-comments">8</span>Comments
+                        <span class="amount-likes">25</span>Likes
+                      </p>
+                      <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Peole</a>
+                      <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Hand</a>
+                      <br><br>
+                      <p class="text-gradient">My inspiration became robots since childhood. 
+                        I started to try something new for yourself and 
+                        understand that I have a passion for robots.
+                        Then i start searching the best programm for
+                        easy modellind. And i found SelfCad.
+                      </p>
+                      <div class="socials">
+                        <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
+                      </div>
+                      <a class="btn btn-default pull-right" href="gallery-post.html" role="button">Read more</a>
+                      <div class="divider push-top-20"></div>
+                      <p class="push-top-10">Category: <a href="#">Printed</a></p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-3">
+                    <div class="vertical-align-wrap">
+                      <div class="hover-effect image-section">
+                      <figure class="effect-layla">
+                        <img src="images/gallery-img-4.jpg" alt="" class="img-responsive">
+                        <figcaption>
+                          <p class="text-center resize-btn"><span>View</span></p>
+                          <a href="gallery-post.html">View</a>
+                        </figcaption>     
+                      </figure>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- gallery-block-content-wrap portrait -->
+            </div><!-- gallery-block -->
+
+            <!-- gallery-block landscape-left -->
+
+            <div class="gallery-block hidden-xs">       
+              <div class="gallery-block-content-wrap landscape-left">
+                <div class="row">
+                  <div class="col-md-4 col-sm-4">
+                    <div class="vertical-align-wrap">
+                      <div class="hover-effect image-section">
+                        <figure class="effect-layla">
+                          <img src="images/gallery-img-5.jpg" alt="" class="img-responsive">
+                          <figcaption>
+                            <p class="text-center resize-btn"><span>View</span></p>
+                            <a href="gallery-post.html">View</a>
+                          </figcaption>     
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-sm-8">
+                    <div class="gallery-item-description">
+                      <h2><a href="gallety-post.html">Car</a></h2>
+                      <p>October 1, 2015 by 
+                        <a href="#"><u>Natalia</u></a>,
+                        <span class="amount-comments">55</span>Comments
+                        <span class="amount-likes">300</span>Likes
+                      </p>
+                      <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Car</a>
+                      <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Smart</a>
+                      <br><br>
+                      <p class="text-gradient">My inspiration became robots since childhood. 
+                        I started to try something new for yourself and 
+                        understand that I have a passion for robots.
+                        Then i start searching the best programm for
+                        easy modellind. And i found SelfCad.
+                      </p>
+                      <div class="socials">
+                        <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
+                      </div>
+                      <a class="btn btn-default pull-right" href="gallery-post.html" role="button">Read more</a>
+                      <div class="divider push-top-20"></div>
+                      <p class="push-top-10">Category: <a href="#">Category</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- gallery-block-content-wrap landscape-left -->
+            </div><!-- gallery-block -->
+            <!-- end gallery-block landscape-left -->
+
+      <!-- END IF USER HAVE ONE PHOTO -->
+
+
+            <!-- MOBILE GALLERY-BLOCKS -->
+
+            <!--  SLIDER IF USER HAVE MORE THEN ONE PHOTO -->
+            <div class="gallery-block visible-xs">       
+              <div class="gallery-mobile">
+                <div class="row">
+                  <div class="col-md-4 col-sm-4">
+                    <div class="vertical-align-wrap">
+                      <div class="image-section">
+                        <div id="carousel-example-generic-mobile" class="carousel slide" data-ride="carousel">
+                          <!-- Indicators -->
+                          <!-- <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic-mobile" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic-mobile" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                          </ol> -->
+
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                              <div class="item-slide" style="background-image: url('../images/gallery-img-1.jpg')"></div>
+                            </div>
+                            <div class="item">
+                              <div class="item-slide" style="background-image: url('../images/gallery-img-2.jpg')"></div>
+                            </div>
+                            <div class="item">
+                              <div class="item-slide" style="background-image: url('../images/gallery-img-3.jpg')"></div>
+                            </div>
+                            <div class="item">
+                              <div class="item-slide" style="background-image: url('../images/gallery-img-4.jpg')"></div>
+                            </div>
+                            <div class="item">
+                              <div class="item-slide" style="background-image: url('../images/gallery-img-5.jpg')"></div>
+                            </div>
+                          </div>
+
+                          <!-- Controls -->
+                          <a class="left carousel-control" href="#carousel-example-generic-mobile" role="button" data-slide="prev">
+                            <span class="carousel-left-arrow" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="right carousel-control" href="#carousel-example-generic-mobile" role="button" data-slide="next">
+                            <span class="carousel-right-arrow" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-sm-8">
+                    <div class="gallery-item-description">
+                      <h2><a href="gallety-post.html">Something strange</a></h2>
+                      <p>October 1, 2015 by 
+                        <a href="#"><u>Natalia</u></a>,
+                        <span class="amount-comments">55</span>Comments
+                        <span class="amount-likes">300</span>Likes
+                      </p>
+                      <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Robot</a>
+                      <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Wild</a>
+                      <br><br>
+                      <p class="text-gradient">My inspiration became robots since childhood. 
+                        I started to try something new for yourself and 
+                        understand that I have a passion for robots.
+                        Then i start searching the best programm for
+                        easy modellind. And i found SelfCad.
+                      </p>
+                      <div class="socials">
+                        <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
+                      </div>
+                      <a class="btn btn-default pull-right" href="gallery-post.html" role="button">Read more</a>
+                      <div class="divider push-top-20"></div>
+                      <p class="push-top-10">Category: <a href="#">Most Popular</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  END SLIDER IF USER HAVE MORE THEN ONE PHOTO -->
+
+            <div class="gallery-block visible-xs">       
+              <div class="gallery-mobile">
+                <div class="row">
+                  <div class="col-md-4 col-sm-4">
+                    <a href="gallery-post.html">
+                      <img src="images/gallery-img-1.jpg" alt="" class="img-responsive">
+                    </a>  
+                  </div>
+                  <div class="col-md-8 col-sm-8">
+                    <div class="gallery-item-description">
+                      <h2><a href="gallety-post.html">Something strange</a></h2>
+                      <p>October 1, 2015 by 
+                        <a href="#"><u>Natalia</u></a>,
+                        <span class="amount-comments">55</span>Comments
+                        <span class="amount-likes">300</span>Likes
+                      </p>
+                      <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Robot</a>
+                      <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Wild</a>
+                      <br><br>
+                      <p class="text-gradient">My inspiration became robots since childhood. 
+                        I started to try something new for yourself and 
+                        understand that I have a passion for robots.
+                        Then i start searching the best programm for
+                        easy modellind. And i found SelfCad.
+                      </p>
+                      <div class="socials">
+                        <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
+                      </div>
+                      <a class="btn btn-default pull-right" href="gallery-post.html" role="button">Read more</a>
+                      <div class="divider push-top-20"></div>
+                      <p class="push-top-10">Category: <a href="#">Most Popular</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- gallery-mobile -->
+            </div><!-- gallery-block -->
+
+            <div class="gallery-block visible-xs">       
+              <div class="gallery-mobile">
+                <div class="row">
+                  <div class="col-md-4 col-sm-4">
+                    <a href="gallery-post.html">
+                      <img src="images/gallery-img-2.jpg" alt="" class="img-responsive">
+                    </a>  
+                  </div>
+                  <div class="col-md-8 col-sm-8">
+                    <div class="gallery-item-description">
+                      <h2><a href="gallety-post.html">My sweet girl</a></h2>
+                      <p>October 1, 2015 by 
+                        <a href="#"><u>Natalia</u></a>,
+                        <span class="amount-comments">8</span>Comments
+                        <span class="amount-likes">25</span>Likes
+                      </p>
+                      <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">People</a>
+                      <br><br>
+                      <p class="text-gradient">My inspiration became robots since childhood. 
+                        I started to try something new for yourself and 
+                        understand that I have a passion for robots.
+                        Then i start searching the best programm for
+                        easy modellind. And i found SelfCad.
+                      </p>
+                      <div class="socials">
+                        <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
+                      </div>
+                      <a class="btn btn-default pull-right" href="gallery-post.html" role="button">Read more</a>
+                      <div class="divider push-top-20"></div>
+                      <p class="push-top-10">Category: <a href="#">Latest</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- gallery-mobile -->
+            </div><!-- gallery-block -->
+
+            <div class="gallery-block visible-xs">       
+              <div class="gallery-mobile">
+                <div class="row">
+                  <div class="col-md-4 col-sm-4">
+                    <a href="gallery-post.html">
+                      <img src="images/gallery-img-3.jpg" alt="" class="img-responsive">
+                    </a>  
+                  </div>
+                  <div class="col-md-8 col-sm-8">
+                    <div class="gallery-item-description">
+                      <h2><a href="gallety-post.html">Character for the  game</a></h2>
+                      <p>October 1, 2015 by 
+                        <a href="#"><u>Natalia</u></a>,
+                        <span class="amount-comments">55</span>Comments
+                        <span class="amount-likes">300</span>Likes
+                      </p>
+                      <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Girl</a>
+                      <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Character</a>
+                      <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Game</a>
+                      <br><br>
+                      <p class="text-gradient">This is new project
+                      </p>
+                      <div class="socials">
+                        <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
+                      </div>
+                      <a class="btn btn-default pull-right" href="gallery-post.html" role="button">Read more</a>
+                      <div class="divider push-top-20"></div>
+                      <p class="push-top-10">Category: <a href="#">Most Discussed</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- gallery-mobile -->
+            </div><!-- gallery-block -->
+
+            <div class="gallery-block visible-xs">       
+              <div class="gallery-mobile">
+                <div class="row">
+                  <div class="col-md-4 col-sm-4">
+                    <a href="gallery-post.html">
+                      <img src="images/gallery-img-4.jpg" alt="" class="img-responsive">
+                    </a>  
+                  </div>
+                  <div class="col-md-8 col-sm-8">
+                    <div class="gallery-item-description">
+                      <h2><a href="gallety-post.html">Simple hand</a></h2>
+                      <p>October 1, 2015 by 
+                        <a href="#"><u>Natalia</u></a>,
+                        <span class="amount-comments">8</span>Comments
+                        <span class="amount-likes">25</span>Likes
+                      </p>
+                      <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Peole</a>
+                      <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Hand</a>
+                      <br><br>
+                      <p class="text-gradient">My inspiration became robots since childhood. 
+                        I started to try something new for yourself and 
+                        understand that I have a passion for robots.
+                        Then i start searching the best programm for
+                        easy modellind. And i found SelfCad.
+                      </p>
+                      <div class="socials">
+                        <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
+                      </div>
+                      <a class="btn btn-default pull-right" href="gallery-post.html" role="button">Read more</a>
+                      <div class="divider push-top-20"></div>
+                      <p class="push-top-10">Category: <a href="#">Printed</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- gallery-mobile -->
+            </div><!-- gallery-block -->
+
+            <div class="gallery-block visible-xs">       
+              <div class="gallery-mobile">
+                <div class="row">
+                  <div class="col-md-4 col-sm-4">
+                    <a href="gallery-post.html">
+                      <img src="images/gallery-img-5.jpg" alt="" class="img-responsive">
+                    </a>  
+                  </div>
+                  <div class="col-md-8 col-sm-8">
+                    <div class="gallery-item-description">
+                      <h2><a href="gallety-post.html">Car</a></h2>
+                      <p>October 1, 2015 by 
+                        <a href="#"><u>Natalia</u></a>,
+                        <span class="amount-comments">55</span>Comments
+                        <span class="amount-likes">300</span>Likes
+                      </p>
+                      <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Car</a>
+                      <a class="btn btn-default hvr-sweep-to-right" href="#" role="button">Smart</a>
+                      <br><br>
+                      <p class="text-gradient">My inspiration became robots since childhood. 
+                        I started to try something new for yourself and 
+                        understand that I have a passion for robots.
+                        Then i start searching the best programm for
+                        easy modellind. And i found SelfCad.
+                      </p>
+                      <div class="socials">
+                        <a href="#"><i class="fa fa-facebook hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter hvr-icon-grow" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin hvr-icon-grow" aria-hidden="true"></i></a>
+                      </div>
+                      <a class="btn btn-default pull-right" href="gallery-post.html" role="button">Read more</a>
+                      <div class="divider push-top-20"></div>
+                      <p class="push-top-10">Category: <a href="#">Category</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- gallery-mobile -->
+            </div><!-- gallery-block -->
+
+            <!-- END MOBILE GALLERY-BLOCKS -->
+
+            <nav class="pagination-wrap">
+              <ul class="pagination bootpag">
+              </ul><!-- pagination -->
+            </nav>
+            <a href="#" class="scrollup">Scroll</a>
+          </div><!-- container -->
+        </div><!-- content-list -->
+      </section>
+
+      <div class="footer soft-ends-20 hidden-xs">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
+              <a href="#"><h4 class="text-center">Latest updates</h4></a>
+              <p>Natalia</p>
+              <span>How do you say Envato in Chinese? Here's how we worked it out. enva.to/4TfPo pic.twitter.com/jzIY9XyS04 </span>
+              <br>
+              <br>
+              <span>11.24 PM</span>
+              <div class="divider"></div>
+              <p>Natalia</p>
+              <span>How do you say Envato in Chinese? Here's how we worked it out. enva.to/4TfPo pic.twitter.com/jzIY9XyS04 </span>
+              <br>
+              <span>11.24 PM</span>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <h4 class="text-center">Quick Links</h4>
+              <ul class="quick-links">
+                <li><a class="btn" href="#" role="button">-Home</a></li>
+                <li><a class="btn" href="#" role="button">-SelfCad</a></li>
+                <li><a class="btn" href="#" role="button">-My topics</a></li>
+                <li><a class="btn" href="#" role="button">-Featured</a></li>
+                <li><a class="btn" href="#" role="button">-Favorites</a></li>
+                <li><a class="btn" href="#" role="button">-Following</a></li>
+                <li><a class="btn" href="#" role="button">-Gallery</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <a href="#"><h4 class="text-center">Popular topics</h4></a>
+              <p>What is the Meta Post</p>
+              <span>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+              </span>
+              <br>
+              <br>
+              <span>June 4 , 2014</span>
+              <div class="divider"></div>
+              <p>What is the Meta Post</p>
+              <span>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
+              </span>
+              <br>
+              <br>
+              <span>June 4 , 2014</span>
+            </div>
+          </div>
+          <p class="copyright text-right push-ends-40"> &copy; 2015 selfcad.com  |  All rights reserved </p>
+        </div>
+      </div>
+      <!-- MOBILE FOOTER -->
+      <div class="footer-mobile soft-ends-30 hidden-lg">
+          <p class="copyright text-center push-reset"> &copy; 2015 selfcad.com  |  All rights reserved </p>
+      </div>
+      <!-- END MOBILE FOOTER -->
+    </div>
+    
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <script>
+      // For Demo purposes only (show hover effect on mobile devices)
+      [].slice.call( document.querySelectorAll('.content a') ).forEach( function(el) {
+        el.onclick = function() { return false; }
+      } );
+    </script>
+
+    <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
+
+    <script src="scripts/vendor.js"></script>
+    
+    <script src="scripts/plugins.js"></script>
+    <!--<script src='http://cdn.tinymce.com/4/tinymce.min.js'></script>-->
+    
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

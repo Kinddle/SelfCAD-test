@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8">
@@ -15,7 +14,7 @@
     <link rel="stylesheet" href="styles/vendor.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+    
     <link rel="stylesheet" href="styles/main.css">
     
     <script src="scripts/vendor/modernizr.js"></script>
@@ -24,7 +23,7 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div id="new-topic">
+    <div id="forums">
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <div class="container">
@@ -53,14 +52,14 @@
                   <a href="#" class="dropdown-toggle"><span class="logo-icon"></span>My SelfCAD</a>
                 </li>
                 <!-- FOR NOT REGISTERED USERS -->
-                <!-- <li>
-                  <a href="login.html" class="dropdown-toggle active"><span class="login-icon"></span>Login</a>
-                </li> -->
+                <li>
+                  <a href="login.html" class="dropdown-toggle"><span class="login-icon"></span>Login</a>
+                </li>
                 <!-- FOR NOT REGISTERED USERS -->
-                
+
                 <!-- FOR REGISTERED USERS -->
 
-                <li class="dropdown">
+                <!-- <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     <span class="user-photo"></span>Natalia
                   </a>
@@ -68,7 +67,7 @@
                     <li><a href="#"><span class="profile-icon"></span>My Profile</a></li>
                     <li><a href="#"><span class="logout-icon"></span>LogOut</a></li>
                   </ul>
-                </li>
+                </li> -->
 
                 <!-- END FOR REGISTERED USERS -->
               </ul>
@@ -88,21 +87,18 @@
                 <li class="selfcad">
                   <a href="#"><span class="logo-icon"></span>My SelfCAD</a>
                 </li>
-                <!-- FOR NOT REGISTERED USERS -->
-                <!-- <li>
+                <li>
                   <a href="login.html"><span class="login-icon"></span>Login</a>
-                </li> -->
-                <!-- END FOR NOT REGISTERED USERS -->
-
+                </li>
                 <!-- FOR REGISTERED USERS -->
 
-                <li>
+                <!-- <li>
                   <a href="#">
                     <span class="user-photo"></span>Natalia
                   </a>
                 </li>
                 <li><a href="#"><span class="profile-icon"></span>My Profile</a></li>
-                <li><a href="#"><span class="logout-icon"></span>LogOut</a></li>
+                <li><a href="#"><span class="logout-icon"></span>LogOut</a></li> -->
 
                 <!-- END FOR REGISTERED USERS -->
               </ul>
@@ -120,6 +116,7 @@
           <br class="rwd-break-none-mobile">
           <h4 class="text-center">If you are new here, be sure to check our <a href="#">Community Rules</a>.<br class="rwd-break"> You may need to <a href="registration.html">register</a> before<br class="rwd-break"> 
           you can post anything.</h4>
+          
           <form class="form-inline">
             <div class="form-group">
               <img src="images/search-icon-big.png">
@@ -127,6 +124,7 @@
             </div>
             <button type="submit" class="btn btn-default">Search</button>
           </form>
+
         </div>
       </section><!-- main-title-block -->
       <section>
@@ -170,103 +168,177 @@
       <section>
         <div class="content-list">
           <div class="container">
+
             <!-- FOR REGISTERED USERS -->
 
-            <div class="main-menu">
+            <!-- <div class="main-menu">
               <a class="btn btn-default" href="#" role="button">My topics</a>
               <a class="btn btn-default" href="#" role="button">Featured</a>
               <a class="btn btn-default star-icon" href="#" role="button">Favorites</a>
               <a class="btn btn-default" href="#" role="button">Following</a>
               <a class="btn btn-default" href="#" role="button">Gallery</a>
-            </div>
+            </div> -->
 
-            <p>New topics need to be approved by a moderator. It may take up to several hours for your post to 
-            become visible to other users. Add tags to your post to make it easier for others to find it. </p>
+            <!-- END FOR REGISTERED USERS -->
 
-            <h3>New topic</h3>
-            <ol class="breadcrumb">
-              <li class="first-step"><a href="#">Forum</a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Payments</a></li>
-              <li class="active">New topic</li>
-            </ol>
-            
             <div class="row">
-              <div class="col-md-12">
-                <form method="post" class="create-topic soft-bottom-20">
-                  <div class="panel panel-default">
-                    <div class="panel-body">
-                      <span>New topic</span>
-                    </div>
-                  </div>
-                  <div class="push-sides-20">
-                    <div class="row">
-                      <div class="col-md-3 col-sm-3 col-xs-6">
-                        <div class="form-group">
-                          <label for="select">Category</label>
-                          <div class="select-wrap">
-                            <select id="select" class="form-control">
-                              <option>Main forun</option>
-                              <option>Select</option>
-                              <option>Select 1</option>
-                              <option>Select 2</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-12 col-sm-12">
-                        <div class="form-group">
-                          <label for="description">Short description:</label>
-                          <textarea class="form-control" rows="1" placeholder=""></textarea>
-                        </div>
-                      </div>
-                    </div>
-                    <textarea id="text-editor">Hello, World!</textarea>
-                    <br>
-                    <div class="row">
-                      <div class="col-md-5 col-sm-4 col-xs-12">
-                        <div class="form-group">
-                          <label for="tags" class="show">Tags:</label>
-                          <input type="text" value="" data-role="tagsinput" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-7 col-sm-8 col-xs-12">
-                        <div class="pull-right">
-                        <div class="checkbox pull-left push-right-10">
-                          <label>
-                            <input type="checkbox" value="">
-                            Notify me about new comments
-                          </label>
-                        </div>
-                        <div class="form-group hidden-xs pull-left">
-                          <label for="notify via email"></label>
-                          <div class="select-wrap">
-                            <select id="select" class="form-control soft-right-20">
-                              <option>Notify via email</option>
-                              <option>Notify via email-1</option>
-                              <option>Notify via email-2</option>
-                              <option>Notify via email-3</option>
-                            </select>
-                          </div>
-                        </div>
-                        </div>
-                      </div>
-                    </div>
-                    <p class="push-bottom-30 text-left">Add up to 5 tags to make it easier for others to find your post</p>
-                    <div class="row">
-                      <div class="col-md-6 col-sm-6 col-xs-6">
-                        <input class="btn btn-default blue-btn" type="submit" value="Cansel">
-                      </div>
-                      <div class="col-md-6 col-sm-6 col-xs-6">
-                        <input class="btn btn-default blue-btn pull-right" type="submit" value="Post >>">
-                      </div>
-                    </div>
-                  </div>
-                </form>
+              <div class="col-md-4 col-sm-12">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="topic-width">Main</th>
+                        <th class="category-width">Topics</th> 
+                        <th class="post-width text-center">Last post by</th>  
+                      </tr> 
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">Main Forum</a></td>
+                        <td class="posts-views">350</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">Tutorials</a></td>
+                        <td class="posts-views">25</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">Challenges</a></td>
+                        <td class="posts-views">1</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">Features Request</a></td>
+                        <td class="posts-views">80</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">3D Printing</a></td>
+                        <td class="posts-views">16</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
-            </div><!-- row -->
-      
-          </div> <!-- container -->
+              <div class="col-md-4 col-sm-12">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <!-- Mobile-view -->
+                        <th class="topic-width visible-xs visible-sm">Support</th>
+                        <th class="category-width visible-xs visible-sm"></th> 
+                        <th class="post-width text-center visible-xs visible-sm"></th> 
+                        <!-- End Mobile-view -->
+
+                        <th class="topic-width hidden-xs hidden-sm">Support</th>
+                        <th class="category-width hidden-xs hidden-sm">Topics</th> 
+                        <th class="post-width text-center hidden-xs hidden-sm">Last post by</th>  
+                      </tr> 
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">Technical Problems</a></td>
+                        <td class="posts-views">350</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">General issues</a></td>
+                        <td class="posts-views">25</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">Payments</a></td>
+                        <td class="posts-views">1</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">Referrals</a></td>
+                        <td class="posts-views">80</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <!-- Mobile-view -->
+                        <th class="topic-width visible-xs visible-sm">Other</th>
+                        <th class="category-width visible-xs visible-sm"></th> 
+                        <th class="post-width text-center visible-xs visible-sm"></th> 
+                        <!-- End Mobile-view -->
+
+                        <th class="topic-width hidden-xs hidden-sm">Other</th>
+                        <th class="category-width hidden-xs hidden-sm">Topics</th> 
+                        <th class="post-width text-center hidden-xs hidden-sm">Last post by</th>  
+                      </tr> 
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">Miscellaneous</a></td>
+                        <td class="posts-views">350</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">Off-topic</a></td>
+                        <td class="posts-views">25</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">Challenges</a></td>
+                        <td class="posts-views">1</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">Features Request</a></td>
+                        <td class="posts-views">80</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="category"><a href="forums-selected-category.html">3D Printing</a></td>
+                        <td class="posts-views">16</td>
+                        <td class="text-center mobile-right-text">
+                          <span class="name">arthur</span><br><span class="date">11.26.15</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
         </div><!-- content-list -->
       </section>
 
@@ -324,7 +396,6 @@
       </div>
       <!-- END MOBILE FOOTER -->
     </div>
-
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -341,7 +412,8 @@
     <script src="scripts/vendor.js"></script>
     
     <script src="scripts/plugins.js"></script>
+    <!--<script src='http://cdn.tinymce.com/4/tinymce.min.js'></script>-->
     
     <script src="scripts/main.js"></script>
   </body>
-</html> -->
+</html>
