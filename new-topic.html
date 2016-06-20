@@ -4,33 +4,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>SelfCAD</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,300" rel="stylesheet" type="text/css">
 
     <!-- Place favicon.ico in the root directory -->
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/jquery-switchbutton/jquery.switchButton.css" />
-    <link rel="stylesheet" href="/bower_components/hover/css/hover-min.css" />
-    <link rel="stylesheet" href="/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css" />
-    <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
+    <link rel="stylesheet" href="styles/vendor.css">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
     
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
+    <script src="scripts/vendor/modernizr.js"></script>
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -343,6 +332,21 @@
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="//cdn.tinymce.com/4/tinymce.js"></script>
+
+    <script src="scripts/vendor.js"></script>
+    
+    <script src="scripts/plugins.js"></script>
+    
+    <script src="scripts/main.js"></script>
+  </body>
+</html> -->.createElement(i);r=o.getElementsByTagName(i)[0];
       e.src='https://www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
