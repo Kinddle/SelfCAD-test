@@ -1,0 +1,28 @@
+.mce-panel {
+	border: none !important;
+}
+.mce-menubar {
+	border: none !important;
+}
+.mce-btn-group:not(:first-child) {
+	border-left: none !important;
+}
+.mce-btn .mce-txt {
+	color: #3d5569 !important;
+	font-size: 18px !important;
+}
+.mce-btn i {
+	color: #3d5569;
+} 
+.mce-caret {
+	border-top: 7px solid #3d5569 !important;
+    border-right: 7px solid transparent !important;
+    border-left: 7px solid transparent !important;
+    margin-top: 4px !important;
+}
+.mce-statusbar .mce-container-body {
+	display: none;
+}
+// #text-editor .mce-content-body {
+// 	background-color: #eff3f6 !important;
+// }

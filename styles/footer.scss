@@ -1,0 +1,48 @@
+.footer, .footer-mobile {
+	background-color: #11729b;
+	a {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	h4 {
+	    color: #fff;
+	    font-weight: 700;
+	    clear: both;
+	}
+	p, span {
+		color: #fff;
+	}
+	p {
+		font-weight: 700;
+		font-size: 14px;
+	}
+	span {
+		font-size: 12px;
+		font-weight: 300;
+	}
+	.divider {
+		border-bottom: 1px solid #fff;
+		margin: 5px 0;
+	}
+	.quick-links {
+		list-style: none;
+		display: block;
+	    margin: 0 auto;
+	    text-align: center;
+		@media (max-width: 768px) {
+            margin-left: 29%;
+		    margin-left: 0;
+		}
+        padding: 0;
+		li {
+			a {
+				color: #fff;
+				font-size: 14px;
+			}
+		}
+	}
+	.copyright {
+		font-weight: 400;
+	}
+}

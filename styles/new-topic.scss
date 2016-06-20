@@ -1,0 +1,71 @@
+#new-topic {
+    .content-list p {
+	    font-size: 18px;
+	    color: #3d5569;
+	    @media (max-width: 767px) {
+		    text-align: center;
+	    }
+    }
+    .content-list p.text-left {
+    	@media (max-width: 767px) {
+		    text-align: left;
+	    }
+    }
+	.content-list h3 {
+	    color: #52b6f9;
+        font-weight: 700;
+	}
+	.create-topic {
+		background-color: #eff3f6;
+	}
+	label {
+		font-weight: 400;
+		color: #3d5569;
+	}
+	select, textarea, .bootstrap-tagsinput {
+		border: 1px solid #3d5569;
+	}
+	.select-wrap {
+		position: relative;
+		.form-control {
+			-webkit-appearance: none;
+		    appearance: none;
+		    -moz-appearance: none;
+		}
+		&:before {
+			position: absolute;
+		    content: '';
+		    right: 15px;
+		    top: 42%;
+		    border-top: 8px solid #3d5569;
+		    border-right: 8px solid transparent;
+		    border-left: 8px solid transparent;
+		}
+	}
+	.checkbox {
+		line-height: 74px;
+		display: inline-block;
+		input[type="checkbox"] {
+			top: 36%;
+		}
+	}
+	.bootstrap-tagsinput {
+		width: 100%;
+	}
+	.label-info {
+		background-color: #5284a9;
+	}
+	.blue-btn {
+		width: 75%;
+		background-color: #5284a9;
+		border: 1px solid #5284a9;
+		border-radius: 0;
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		color: #fff;
+		&:focus {
+        	outline: none;
+            box-shadow: none;
+        }
+	}
+}

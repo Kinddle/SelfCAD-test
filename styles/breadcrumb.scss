@@ -1,0 +1,26 @@
+.breadcrumb {
+	background-color: #fff;
+	font-size: 20px;
+	color: #11729b;
+	padding: 8px 0;
+	.active {
+		color: #3d5569;
+	}
+	.first-step {
+		padding-left: 17px;
+		position: relative;
+		&:before {
+			position: absolute;
+			background: url('../images/home-icon-small.png') no-repeat;
+			width: 12px;
+			height: 14px;
+			content: '';
+			left: 0;
+            top: 7px;
+		}
+	}
+}
+.breadcrumb > li + li:before {
+	content: '\27F6';
+	color: #11729b;
+}
