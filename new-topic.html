@@ -66,6 +66,8 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li><a href="#"><span class="profile-icon"></span>My Profile</a></li>
+                    <li><a href="#"><span class="message-icon"></span>Messages</a></li>
+                    <li><a href="#"><span class="edit-icon"></span>Edit Profile</a></li>
                     <li><a href="#"><span class="logout-icon"></span>LogOut</a></li>
                   </ul>
                 </li>
@@ -102,6 +104,8 @@
                   </a>
                 </li>
                 <li><a href="#"><span class="profile-icon"></span>My Profile</a></li>
+                <li><a href="#"><span class="message-icon"></span>Messages</a></li>
+                <li><a href="#"><span class="edit-icon"></span>Edit Profile</a></li>
                 <li><a href="#"><span class="logout-icon"></span>LogOut</a></li>
 
                 <!-- END FOR REGISTERED USERS -->
@@ -204,14 +208,12 @@
                       <div class="col-md-3 col-sm-3 col-xs-6">
                         <div class="form-group">
                           <label for="select">Category</label>
-                          <div class="select-wrap">
-                            <select id="select" class="form-control">
-                              <option>Main forun</option>
-                              <option>Select</option>
-                              <option>Select 1</option>
-                              <option>Select 2</option>
-                            </select>
-                          </div>
+                          <select class="selectpicker">
+                            <option>Main forun</option>
+                            <option>Select</option>
+                            <option>Select 1</option>
+                            <option>Select 2</option>
+                          </select>
                         </div>
                       </div>
                       <div class="col-md-12 col-sm-12">
@@ -231,17 +233,15 @@
                         </div>
                       </div>
                       <div class="col-md-7 col-sm-8 col-xs-12">
-                        <div class="pull-right">
-                        <div class="checkbox pull-left push-right-10">
-                          <label>
-                            <input type="checkbox" value="">
-                            Notify me about new comments
-                          </label>
-                        </div>
-                        <div class="form-group hidden-xs pull-left">
-                          <label for="notify via email"></label>
-                          <div class="select-wrap">
-                            <select id="select" class="form-control soft-right-20">
+                        <div class="pull-right push-top-20">
+                          <div class="checkbox pull-left">
+                            <label>
+                              <input type="checkbox" value="">
+                              Notify me about new comments
+                            </label>
+                          </div>
+                          <div class="hidden-xs pull-left notification-select">
+                            <select class="selectpicker">
                               <option>Notify via email</option>
                               <option>Notify via email-1</option>
                               <option>Notify via email-2</option>
@@ -249,13 +249,12 @@
                             </select>
                           </div>
                         </div>
-                        </div>
                       </div>
                     </div>
                     <p class="push-bottom-30 text-left">Add up to 5 tags to make it easier for others to find your post</p>
                     <div class="row">
                       <div class="col-md-6 col-sm-6 col-xs-6">
-                        <input class="btn btn-default blue-btn" type="submit" value="Cansel">
+                        <input class="btn btn-default blue-btn" type="submit" value="Cancel">
                       </div>
                       <div class="col-md-6 col-sm-6 col-xs-6">
                         <input class="btn btn-default blue-btn pull-right" type="submit" value="Post >>">
@@ -336,7 +335,8 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
-    <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPoiPlxE-NMWr9xp9_ouItwqDm27zrdp4&signed_in=true&libraries=places&callback=initMap" async defer="defer">
+    </script>
     <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 
     <script src="scripts/vendor.js"></script>

@@ -63,6 +63,8 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li><a href="#"><span class="profile-icon"></span>My Profile</a></li>
+                    <li><a href="#"><span class="message-icon"></span>Messages</a></li>
+                    <li><a href="#"><span class="edit-icon"></span>Edit Profile</a></li>
                     <li><a href="#"><span class="logout-icon"></span>LogOut</a></li>
                   </ul>
                 </li> -->
@@ -96,6 +98,8 @@
                   </a>
                 </li>
                 <li><a href="#"><span class="profile-icon"></span>My Profile</a></li>
+                <li><a href="#"><span class="message-icon"></span>Messages</a></li>
+                <li><a href="#"><span class="edit-icon"></span>Edit Profile</a></li>
                 <li><a href="#"><span class="logout-icon"></span>LogOut</a></li> -->
 
                 <!-- END FOR REGISTERED USERS -->
@@ -265,11 +269,11 @@
                         </div>
                       </div>
                     </div>
-                    <div class="fieldgroup push-bottom-30">
+                    <div class="fieldgroup">
                       <label for="location">My Location </label>
                       <div class="wrapped-input">
                         <div class="map-wrap">
-                          <div id="map" class="map"></div>
+                          <div id="map"></div>
                           <div class="demo" id="labels2-3">
                           <input type="checkbox" value="1" checked="checked">
                         </div>
@@ -407,7 +411,52 @@
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
-    <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
+    <script>
+      function initMap() {
+      var uluru = {lat: 9.57712082309478, lng: 99.95951843680814};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: uluru
+      });
+
+      var contentString = '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">Koh Samui</h1>'+
+          '<div id="bodyContent">'+
+          '<p>Over the rainbow, Up high way ' +
+          'sandstone rock formation in the southern part of the '+
+          'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+          'south west of the nearest large town, Alice Springs; 450&#160;km '+
+          '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+          'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+          'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+          'Aboriginal people of the area. It has many springs, waterholes, '+
+          'rock caves and ancient paintings. Uluru is listed as a World '+
+          'Heritage Site.</p>'+
+          '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+          'https://en.wikipedia.org/w/index.php?title=Koh Samui</a> '+
+          '(last visited June 22, 2009).</p>'+
+          '</div>'+
+          '</div>';
+
+      var infowindow = new google.maps.InfoWindow({
+        content: contentString
+      });
+
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+        title: 'Koh Samui (Ayers Rock)'
+      });
+      marker.addListener('click', function() {
+        infowindow.open(map, marker);
+      });
+    }
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPoiPlxE-NMWr9xp9_ouItwqDm27zrdp4&signed_in=true&libraries=places&callback=initMap" async defer="defer">
+    </script>
     <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 
     <script src="scripts/vendor.js"></script>

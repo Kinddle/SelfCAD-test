@@ -23,7 +23,7 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div id="gallery">
+    <div id="profile">
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <div class="container">
@@ -52,14 +52,14 @@
                   <a href="#" class="dropdown-toggle"><span class="logo-icon"></span>My SelfCAD</a>
                 </li>
                 <!-- FOR NOT REGISTERED USERS -->
-                <li>
+                <!-- <li>
                   <a href="login.html" class="dropdown-toggle"><span class="login-icon"></span>Login</a>
-                </li>
+                </li> -->
                 <!-- FOR NOT REGISTERED USERS -->
 
                 <!-- FOR REGISTERED USERS -->
 
-                <!-- <li class="dropdown">
+                <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     <span class="user-photo"></span>Natalia
                   </a>
@@ -69,7 +69,7 @@
                     <li><a href="#"><span class="edit-icon"></span>Edit Profile</a></li>
                     <li><a href="#"><span class="logout-icon"></span>LogOut</a></li>
                   </ul>
-                </li> -->
+                </li>
 
                 <!-- END FOR REGISTERED USERS -->
               </ul>
@@ -89,9 +89,9 @@
                 <li class="selfcad">
                   <a href="#"><span class="logo-icon"></span>My SelfCAD</a>
                 </li>
-                <li>
+                <!-- <li>
                   <a href="login.html"><span class="login-icon"></span>Login</a>
-                </li>
+                </li> -->
                 <!-- FOR REGISTERED USERS -->
 
                 <li>
@@ -116,100 +116,117 @@
       
       <section class="main-title-block">
         <div class="container">
-          <h3 class="text-center">WELCOME TO SELFCAD COMMUNITY FORUMS</h3>
-          <br class="rwd-break-none-mobile">
-          <h4 class="text-center">If you are new here, be sure to check our <a href="#">Community Rules</a>.<br class="rwd-break"> You may need to <a href="registration.html">register</a> before<br class="rwd-break"> 
-          you can post anything.</h4>
-          
-          <form class="form-inline">
-            <div class="form-group">
-              <img src="images/search-icon-big.png">
-              <input type="text" class="form-control" placeholder="What do you want to read about?">
-            </div>
-            <button type="submit" class="btn btn-default">Search</button>
-          </form>
-
+          <img src="images/user-photo-big.png" class="img-responsive" alt="">
         </div>
       </section><!-- main-title-block -->
-      <section>
-        <div class="container">
-          <div class="content-menu">
-            <div class="row">
-              <div class="col-md-4 col-sm-4">
-                <a href="gallery.html" class="text-center">
-                  <div class="content-menu-item-wrap">
-                    <div class="gallery-item"></div>
-                    Gallery
-                    <br>
-                    <span>1562 photo / 15 categories</span>  
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-4 col-sm-4">
-                <a href="forums.html" class="text-center">
-                  <div class="content-menu-item-wrap">
-                    <div class="forum-item"></div>
-                    Forums
-                    <br>
-                    <span>1000 topics / 15 categories</span>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-4 col-sm-4">
-                <a href="faq.html" class="text-center">
-                  <div class="content-menu-item-wrap">
-                    <div class="faq-item"></div>
-                    FAQ
-                    <br>
-                    <span>200 questions / 5 categories</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div><!-- content-menu -->
-        </div>
-      </section>
+
       <section>
         <div class="content-list">
           <div class="container">
-
-            <!-- FOR REGISTERED USERS -->
-
-            <!-- <div class="main-menu">
-              <a class="btn btn-default" href="#" role="button">My topics</a>
-              <a class="btn btn-default" href="#" role="button">Featured</a>
-              <a class="btn btn-default star-icon" href="#" role="button">Favorites</a>
-              <a class="btn btn-default" href="#" role="button">Following</a>
-              <a class="btn btn-default" href="#" role="button">Gallery</a>
-            </div> -->
-
-            <!-- END FOR REGISTERED USERS -->
-            
-            <div class="sort-by push-bottom-30">
-              <form class="form-inline">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="pull-right">
-                      <div class="form-group push-right-10">
-                        <label for="Sort by">Sort by</label>
-                        <div id="gallery-sort">
-                          <select rv-value="truck.sort_id" class="btn-default"><span class="caret"></span>
-                            <option rv-each-sort="sort" rv-value="sort.id">{ sort.gallery_number }</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <img src="images/search-icon-gallery.png">
-                        <input type="text" class="form-control" placeholder="Search tags">
-                      </div>
-                    </div>
-                  </div>
-                  <!-- <div class="col-md-6">
-                  </div> -->
+            <div class="user-activity">
+              <div class="row">
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                  <ul class="list-inline">
+                    <li>
+                      <span class="user-activity-action">Joined</span> 
+                      <span class="user-activity-data">Nov 21</span>
+                    </li>
+                    <li>
+                      <span class="user-activity-action">Last Post</span>
+                      <span class="user-activity-data">3 hours</span>
+                    </li>
+                    <li>
+                      <span class="user-activity-action">Seen</span>
+                      <span class="user-activity-data">4 PM</span>
+                    </li>
+                    <li>
+                      <span class="user-activity-action">Views</span>
+                      <span class="user-activity-data">150</span>
+                    </li>
+                  </ul>
                 </div>
-              </form>
-
-            </div><!-- Sort-by -->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <span class="user-activity-personal-stuff">I have 3D Printer</span>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="about-user">
+              <span class="label label-default status">Status</span>
+              <h3 class="push-ends-10"><strong>Natalia Ulianets</strong></h3>
+              <p><i>
+                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+              </i></p>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="map-wrap">
+                  <div id="map"></div>
+                  <div class="user-info-box hidden-xs">
+                    <h3 class="push-top-reset">User Information</h3>
+                    <div class="divider"></div>
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="user-info-details-first-col">
+                          <img src="images/user-info-data-icon.png" class="img-responsive" alt="">
+                        </div>
+                        <span class="user-info-details-second-col">Registration date</span>
+                        <span class="user-info-details-third-col">2014-06-04</span>
+                      </li>
+                      <li>
+                        <div class="user-info-details-first-col">
+                          <img src="images/user-info-sex-icon.png" class="img-responsive" alt="">
+                        </div>
+                        <span class="user-info-details-second-col">Sex</span>
+                        <span class="user-info-details-third-col">Female</span>
+                      </li>
+                      <li>
+                        <div class="user-info-details-first-col">
+                          <img src="images/user-info-age-icon.png" class="img-responsive" alt="">
+                        </div>
+                        <span class="user-info-details-second-col">Age</span>
+                        <span class="user-info-details-third-col">22</span>
+                      </li>
+                      <li>
+                        <div class="user-info-details-first-col">
+                          <img src="images/user-info-location-icon.png" class="img-responsive" alt="">
+                        </div>
+                        <span class="user-info-details-second-col">Country</span>
+                        <span class="user-info-details-third-col">Egypt</span>
+                      </li>
+                      <li>
+                        <div class="user-info-details-first-col">
+                          <img src="images/user-info-posts-icon.png" class="img-responsive" alt="">
+                        </div>
+                        <span class="user-info-details-second-col">Posts</span>
+                        <span class="user-info-details-third-col">20</span>
+                      </li>
+                      <li>
+                        <div class="user-info-details-first-col">
+                          <img src="images/user-info-comments-icon.png" class="img-responsive" alt="">
+                        </div>
+                        <span class="user-info-details-second-col">Comments</span>
+                        <span class="user-info-details-third-col">55</span>
+                      </li>
+                      <li>
+                        <div class="user-info-details-first-col">
+                          <img src="images/user-info-answers-icon.png" class="img-responsive" alt="">
+                        </div>
+                        <span class="user-info-details-second-col">Best answers</span>
+                        <span class="user-info-details-third-col">22</span>
+                      </li>
+                      <li>
+                        <div class="user-info-details-first-col">
+                          <img src="images/user-info-followers-icon.png" class="img-responsive" alt="">
+                        </div>
+                        <span class="user-info-details-second-col">Followers</span>
+                        <span class="user-info-details-third-col">82</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
             
             <!-- gallery-block landscape-left -->
            <!--  SLIDER IF USER HAVE MORE THEN ONE PHOTO -->
@@ -936,6 +953,49 @@
         el.onclick = function() { return false; }
       } );
     </script>
+    <script>
+      function initMap() {
+      var uluru = {lat: 9.57712082309478, lng: 99.95951843680814};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: uluru
+      });
+
+      var contentString = '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">Koh Samui</h1>'+
+          '<div id="bodyContent">'+
+          '<p>Over the rainbow, Up high way ' +
+          'sandstone rock formation in the southern part of the '+
+          'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+          'south west of the nearest large town, Alice Springs; 450&#160;km '+
+          '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+          'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+          'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+          'Aboriginal people of the area. It has many springs, waterholes, '+
+          'rock caves and ancient paintings. Uluru is listed as a World '+
+          'Heritage Site.</p>'+
+          '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+          'https://en.wikipedia.org/w/index.php?title=Koh Samui</a> '+
+          '(last visited June 22, 2009).</p>'+
+          '</div>'+
+          '</div>';
+
+      var infowindow = new google.maps.InfoWindow({
+        content: contentString
+      });
+
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+        title: 'Koh Samui (Ayers Rock)'
+      });
+      marker.addListener('click', function() {
+        infowindow.open(map, marker);
+      });
+    }
+    </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPoiPlxE-NMWr9xp9_ouItwqDm27zrdp4&signed_in=true&libraries=places&callback=initMap" async defer="defer">
     </script>
@@ -946,5 +1006,4 @@
     <script src="scripts/plugins.js"></script>
     
     <script src="scripts/main.js"></script>
-  </body>
-</html>
+  </body></html>
